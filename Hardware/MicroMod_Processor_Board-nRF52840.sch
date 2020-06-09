@@ -20890,12 +20890,9 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="104.14" y1="137.16" x2="104.14" y2="276.86" width="0.2032" layer="97" style="longdash"/>
 <wire x1="104.14" y1="137.16" x2="271.78" y2="137.16" width="0.2032" layer="97" style="longdash"/>
 <wire x1="271.78" y1="137.16" x2="271.78" y2="279.4" width="0.2032" layer="97" style="longdash"/>
-<wire x1="271.78" y1="137.16" x2="431.8" y2="137.16" width="0.2032" layer="97" style="longdash"/>
 <wire x1="104.14" y1="137.16" x2="104.14" y2="68.58" width="0.2032" layer="97" style="longdash"/>
 <wire x1="104.14" y1="68.58" x2="104.14" y2="0" width="0.2032" layer="97" style="longdash"/>
 <wire x1="104.14" y1="68.58" x2="0" y2="68.58" width="0.2032" layer="97" style="longdash"/>
-<wire x1="104.14" y1="68.58" x2="271.78" y2="68.58" width="0.2032" layer="97" style="longdash"/>
-<wire x1="271.78" y1="68.58" x2="271.78" y2="137.16" width="0.2032" layer="97" style="longdash"/>
 <text x="56.134" y="124.206" size="2.54" layer="94" font="vector" align="center">Status LED</text>
 <text x="51.054" y="149.606" size="2.54" layer="97" font="vector" align="center">Vin: 1.755 - 3.63V</text>
 <text x="16.256" y="262.382" size="1.778" layer="97">0.65uA Leakage
