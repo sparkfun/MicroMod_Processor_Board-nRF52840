@@ -18546,19 +18546,6 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <vertex x="1.8364" y="-0.0051" curve="-90.012967"/>
 </polygon>
 </package>
-<package name="CAP-PTH-10MM">
-<description>2 PTH spaced 10mm apart</description>
-<wire x1="-0.5" y1="0.635" x2="-0.5" y2="0" width="0.2032" layer="21"/>
-<pad name="1" x="-5" y="0" drill="0.9" diameter="1.651"/>
-<pad name="2" x="5" y="0" drill="0.9" diameter="1.651"/>
-<text x="0" y="1" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-1" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-<wire x1="-0.5" y1="0" x2="-0.5" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="0.5" y1="0.635" x2="0.5" y2="0" width="0.2032" layer="21"/>
-<wire x1="0.5" y1="0" x2="0.5" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-0.5" y1="0" x2="-3.5" y2="0" width="0.2032" layer="21"/>
-<wire x1="0.5" y1="0" x2="3.5" y2="0" width="0.2032" layer="21"/>
-</package>
 <package name="1206">
 <description>&lt;p&gt;&lt;b&gt;Generic 3216 (1206) package&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
@@ -18718,53 +18705,6 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <technology name="">
 <attribute name="PROD_ID" value="CAP-15083" constant="no"/>
 <attribute name="VALUE" value="0.1uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="10NF" prefix="C">
-<description>&lt;h3&gt;0.01uF/10nF/10,000pF ceramic capacitors&lt;/h3&gt;
-&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;
-
-CAP-09321</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-PTH-10MM-10000V-1-%" package="CAP-PTH-10MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-09321"/>
-<attribute name="VALUE" value="10nF"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-50V-10%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-00867"/>
-<attribute name="VALUE" value="10nF"/>
-</technology>
-</technologies>
-</device>
-<device name="-0402T-25V-10%" package="0402-TIGHT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-14847" constant="no"/>
-<attribute name="VALUE" value="10nF" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -19389,120 +19329,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-09911" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="SparkFun-IC-Comms">
-<description>&lt;h3&gt;SparkFun Communication ICs&lt;/h3&gt;
-This is the communications library, which contains things that exist on wired busses.  This includes USB to serial conversion ICs, like the FTDI line, plus high speed line drivers, level shifters, bus drivers, CAN transceivers and ethernet PHYs.
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="MSOP10">
-<wire x1="-1.4" y1="1.425" x2="-1.4" y2="-1.425" width="0.127" layer="51"/>
-<wire x1="-1.4" y1="-1.425" x2="1.4" y2="-1.425" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="-1.425" x2="1.4" y2="1.425" width="0.127" layer="51"/>
-<wire x1="1.4" y1="1.425" x2="-1.4" y2="1.425" width="0.2032" layer="21"/>
-<circle x="-1.75" y="1.55" radius="0.2" width="0" layer="21"/>
-<smd name="1" x="-2.25" y="1" dx="0.3" dy="1" layer="1" rot="R270" stop="no" cream="no"/>
-<smd name="2" x="-2.25" y="0.5" dx="0.3" dy="1" layer="1" rot="R270" stop="no" cream="no"/>
-<smd name="3" x="-2.25" y="0" dx="0.3" dy="1" layer="1" rot="R270" stop="no" cream="no"/>
-<smd name="4" x="-2.25" y="-0.5" dx="0.3" dy="1" layer="1" rot="R270" stop="no" cream="no"/>
-<smd name="5" x="-2.25" y="-1" dx="0.3" dy="1" layer="1" rot="R270" stop="no" cream="no"/>
-<smd name="6" x="2.25" y="-1" dx="0.3" dy="1" layer="1" rot="R90" stop="no" cream="no"/>
-<smd name="7" x="2.25" y="-0.5" dx="0.3" dy="1" layer="1" rot="R90" stop="no" cream="no"/>
-<smd name="8" x="2.25" y="0" dx="0.3" dy="1" layer="1" rot="R90" stop="no" cream="no"/>
-<smd name="9" x="2.25" y="0.5" dx="0.3" dy="1" layer="1" rot="R90" stop="no" cream="no"/>
-<smd name="10" x="2.25" y="1" dx="0.3" dy="1" layer="1" rot="R90" stop="no" cream="no"/>
-<rectangle x1="-2.3125" y1="0.5125" x2="-2.0125" y2="1.4875" layer="51" rot="R270"/>
-<rectangle x1="-2.3125" y1="0.0125" x2="-2.0125" y2="0.9875" layer="51" rot="R270"/>
-<rectangle x1="-2.3125" y1="-0.4875" x2="-2.0125" y2="0.4875" layer="51" rot="R270"/>
-<rectangle x1="-2.3125" y1="-0.9875" x2="-2.0125" y2="-0.0125" layer="51" rot="R270"/>
-<rectangle x1="-2.3125" y1="-1.4875" x2="-2.0125" y2="-0.5125" layer="51" rot="R270"/>
-<rectangle x1="-2.45" y1="0.45" x2="-2.05" y2="1.55" layer="29" rot="R270"/>
-<rectangle x1="-2.45" y1="-0.05" x2="-2.05" y2="1.05" layer="29" rot="R270"/>
-<rectangle x1="-2.45" y1="-0.55" x2="-2.05" y2="0.55" layer="29" rot="R270"/>
-<rectangle x1="-2.45" y1="-1.05" x2="-2.05" y2="0.05" layer="29" rot="R270"/>
-<rectangle x1="-2.45" y1="-1.55" x2="-2.05" y2="-0.45" layer="29" rot="R270"/>
-<rectangle x1="-2.3875" y1="0.5625" x2="-2.1375" y2="1.4375" layer="31" rot="R270"/>
-<rectangle x1="-2.3875" y1="0.0625" x2="-2.1375" y2="0.9375" layer="31" rot="R270"/>
-<rectangle x1="-2.3875" y1="-0.4375" x2="-2.1375" y2="0.4375" layer="31" rot="R270"/>
-<rectangle x1="-2.3875" y1="-0.9375" x2="-2.1375" y2="-0.0625" layer="31" rot="R270"/>
-<rectangle x1="-2.3875" y1="-1.4375" x2="-2.1375" y2="-0.5625" layer="31" rot="R270"/>
-<rectangle x1="2.0125" y1="-1.4875" x2="2.3125" y2="-0.5125" layer="51" rot="R90"/>
-<rectangle x1="2.0125" y1="-0.9875" x2="2.3125" y2="-0.0125" layer="51" rot="R90"/>
-<rectangle x1="2.0125" y1="-0.4875" x2="2.3125" y2="0.4875" layer="51" rot="R90"/>
-<rectangle x1="2.0125" y1="0.0125" x2="2.3125" y2="0.9875" layer="51" rot="R90"/>
-<rectangle x1="2.0125" y1="0.5125" x2="2.3125" y2="1.4875" layer="51" rot="R90"/>
-<rectangle x1="2.05" y1="-1.55" x2="2.45" y2="-0.45" layer="29" rot="R90"/>
-<rectangle x1="2.05" y1="-1.05" x2="2.45" y2="0.05" layer="29" rot="R90"/>
-<rectangle x1="2.05" y1="-0.55" x2="2.45" y2="0.55" layer="29" rot="R90"/>
-<rectangle x1="2.05" y1="-0.05" x2="2.45" y2="1.05" layer="29" rot="R90"/>
-<rectangle x1="2.05" y1="0.45" x2="2.45" y2="1.55" layer="29" rot="R90"/>
-<rectangle x1="2.1375" y1="-1.4375" x2="2.3875" y2="-0.5625" layer="31" rot="R90"/>
-<rectangle x1="2.1375" y1="-0.9375" x2="2.3875" y2="-0.0625" layer="31" rot="R90"/>
-<rectangle x1="2.1375" y1="-0.4375" x2="2.3875" y2="0.4375" layer="31" rot="R90"/>
-<rectangle x1="2.1375" y1="0.0625" x2="2.3875" y2="0.9375" layer="31" rot="R90"/>
-<rectangle x1="2.1375" y1="0.5625" x2="2.3875" y2="1.4375" layer="31" rot="R90"/>
-<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.54" size="0.6096" layer="27" font="vector" ratio="20" align="bottom-center">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="CH340E">
-<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.4064" layer="94"/>
-<pin name="!CTS" x="10.16" y="-2.54" length="short" rot="R180"/>
-<pin name="!RTS" x="10.16" y="0" length="short" rot="R180"/>
-<pin name="GND" x="-10.16" y="-7.62" length="short"/>
-<pin name="TNOW" x="10.16" y="-7.62" length="short" rot="R180"/>
-<pin name="RXI" x="10.16" y="5.08" length="short" rot="R180"/>
-<pin name="TXO" x="10.16" y="7.62" length="short" rot="R180"/>
-<pin name="UD+" x="-10.16" y="0" length="short"/>
-<pin name="UD-" x="-10.16" y="-2.54" length="short"/>
-<pin name="V3" x="-10.16" y="5.08" length="short"/>
-<pin name="VCC" x="-10.16" y="7.62" length="short"/>
-<text x="-7.62" y="10.795" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CH340E" prefix="U">
-<gates>
-<gate name="U1" symbol="CH340E" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_MSOP10" package="MSOP10">
-<connects>
-<connect gate="U1" pin="!CTS" pad="5"/>
-<connect gate="U1" pin="!RTS" pad="4"/>
-<connect gate="U1" pin="GND" pad="3"/>
-<connect gate="U1" pin="RXI" pad="9"/>
-<connect gate="U1" pin="TNOW" pad="6"/>
-<connect gate="U1" pin="TXO" pad="8"/>
-<connect gate="U1" pin="UD+" pad="1"/>
-<connect gate="U1" pin="UD-" pad="2"/>
-<connect gate="U1" pin="V3" pad="10"/>
-<connect gate="U1" pin="VCC" pad="7"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-14135" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -21022,13 +20848,6 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <part name="D2" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="1KOHM" device="-0402T-1/16W-1%" value="1k"/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="GND31" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C17" library="SparkFun-Capacitors" deviceset="10NF" device="-0402T-25V-10%" value="10nF"/>
-<part name="GND33" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C18" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402T-16V-10%" value="0.1uF"/>
-<part name="GND38" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="SUPPLY26" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="U6" library="SparkFun-IC-Comms" deviceset="CH340E" device="_MSOP10"/>
 <part name="FD1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL" value="FIDUCIALUFIDUCIAL"/>
 <part name="FD2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL" value="FIDUCIALUFIDUCIAL"/>
 <part name="FD3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL" value="FIDUCIALUFIDUCIAL"/>
@@ -21066,7 +20885,6 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <sheets>
 <sheet>
 <plain>
-<text x="396.494" y="116.586" size="2.54" layer="97" font="vector" align="center">USB-to-Serial Converter</text>
 <text x="53.594" y="271.526" size="2.54" layer="94" font="vector" align="center">MicroMod Connector</text>
 <wire x1="0" y1="137.16" x2="104.14" y2="137.16" width="0.2032" layer="97" style="longdash"/>
 <wire x1="104.14" y1="137.16" x2="104.14" y2="276.86" width="0.2032" layer="97" style="longdash"/>
@@ -21109,30 +20927,6 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 </instance>
 <instance part="GND3" gate="1" x="60.96" y="83.82" smashed="yes">
 <attribute name="VALUE" x="60.96" y="83.566" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="GND31" gate="1" x="370.84" y="78.74" smashed="yes">
-<attribute name="VALUE" x="368.3" y="76.2" size="1.778" layer="96"/>
-</instance>
-<instance part="C17" gate="G$1" x="375.92" y="86.36" smashed="yes">
-<attribute name="NAME" x="376.682" y="84.582" size="1.778" layer="95"/>
-<attribute name="VALUE" x="376.682" y="88.9" size="1.778" layer="96"/>
-</instance>
-<instance part="GND33" gate="1" x="375.92" y="78.74" smashed="yes">
-<attribute name="VALUE" x="373.38" y="76.2" size="1.778" layer="96"/>
-</instance>
-<instance part="C18" gate="G$1" x="370.84" y="86.36" smashed="yes">
-<attribute name="NAME" x="366.014" y="84.328" size="1.778" layer="95"/>
-<attribute name="VALUE" x="363.728" y="88.9" size="1.778" layer="96"/>
-</instance>
-<instance part="GND38" gate="1" x="386.08" y="83.82" smashed="yes">
-<attribute name="VALUE" x="383.54" y="81.28" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY26" gate="G$1" x="370.84" y="106.68" smashed="yes">
-<attribute name="VALUE" x="370.84" y="109.474" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="U6" gate="U1" x="398.78" y="96.52" smashed="yes">
-<attribute name="NAME" x="391.16" y="107.315" size="1.778" layer="95"/>
-<attribute name="VALUE" x="391.16" y="83.82" size="1.778" layer="96"/>
 </instance>
 <instance part="FD1" gate="G$1" x="429.26" y="25.4" smashed="yes"/>
 <instance part="FD2" gate="G$1" x="426.72" y="25.4" smashed="yes"/>
@@ -21236,23 +21030,6 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <nets>
 <net name="3.3V" class="0">
 <segment>
-<pinref part="C18" gate="G$1" pin="1"/>
-<wire x1="370.84" y1="106.68" x2="370.84" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="370.84" y1="104.14" x2="370.84" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="388.62" y1="104.14" x2="375.92" y2="104.14" width="0.1524" layer="91"/>
-<junction x="370.84" y="104.14"/>
-<pinref part="SUPPLY26" gate="G$1" pin="3.3V"/>
-<pinref part="U6" gate="U1" pin="VCC"/>
-<wire x1="375.92" y1="104.14" x2="370.84" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="388.62" y1="101.6" x2="375.92" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="375.92" y1="91.44" x2="375.92" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U6" gate="U1" pin="V3"/>
-<wire x1="375.92" y1="101.6" x2="375.92" y2="104.14" width="0.1524" layer="91"/>
-<junction x="375.92" y="101.6"/>
-<junction x="375.92" y="104.14"/>
-</segment>
-<segment>
 <wire x1="12.7" y1="241.3" x2="12.7" y2="254" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="241.3" x2="12.7" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="D7" gate="G$1" pin="C"/>
@@ -21308,22 +21085,6 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="60.96" y1="86.36" x2="60.96" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="370.84" y1="83.82" x2="370.84" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="GND31" gate="1" pin="GND"/>
-<pinref part="C18" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="C17" gate="G$1" pin="2"/>
-<pinref part="GND33" gate="1" pin="GND"/>
-<wire x1="375.92" y1="81.28" x2="375.92" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="388.62" y1="88.9" x2="386.08" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="386.08" y1="88.9" x2="386.08" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="GND38" gate="1" pin="GND"/>
-<pinref part="U6" gate="U1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -21644,37 +21405,11 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="60.96" y1="99.06" x2="60.96" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RXI-0" class="0">
-<segment>
-<label x="411.48" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="408.94" y1="104.14" x2="411.48" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="U6" gate="U1" pin="TXO"/>
-</segment>
-</net>
-<net name="TXO-0" class="0">
-<segment>
-<label x="411.48" y="101.6" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="408.94" y1="101.6" x2="411.48" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U6" gate="U1" pin="RXI"/>
-</segment>
-</net>
-<net name="!RTS" class="0">
-<segment>
-<wire x1="408.94" y1="96.52" x2="411.48" y2="96.52" width="0.1524" layer="91"/>
-<label x="411.48" y="96.52" size="1.27" layer="95" xref="yes"/>
-<pinref part="U6" gate="U1" pin="!RTS"/>
-</segment>
-</net>
 <net name="USB_D-" class="0">
 <segment>
 <wire x1="30.48" y1="233.68" x2="27.94" y2="233.68" width="0.1524" layer="91"/>
 <label x="27.94" y="233.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J1" gate="J1" pin="USB_D-"/>
-</segment>
-<segment>
-<wire x1="388.62" y1="93.98" x2="386.08" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="U6" gate="U1" pin="UD-"/>
-<label x="386.08" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -21687,11 +21422,6 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="30.48" y1="231.14" x2="27.94" y2="231.14" width="0.1524" layer="91"/>
 <label x="27.94" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J1" gate="J1" pin="USB_D+"/>
-</segment>
-<segment>
-<wire x1="386.08" y1="96.52" x2="388.62" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="U6" gate="U1" pin="UD+"/>
-<label x="386.08" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
