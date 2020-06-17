@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -21169,12 +21169,22 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="78.74" y="236.22" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="J1" gate="J1" pin="SPI_SCK1"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.30(AIN6)"/>
+<wire x1="210.82" y1="175.26" x2="213.36" y2="175.26" width="0.1524" layer="91"/>
+<label x="213.36" y="175.26" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SPI_MOSI1" class="0">
 <segment>
 <wire x1="76.2" y1="233.68" x2="78.74" y2="233.68" width="0.1524" layer="91"/>
 <label x="78.74" y="233.68" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="J1" gate="J1" pin="SPI_MOSI1"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.03(AIN1)"/>
+<wire x1="210.82" y1="243.84" x2="213.36" y2="243.84" width="0.1524" layer="91"/>
+<label x="213.36" y="243.84" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TX1" class="0">
@@ -21183,12 +21193,22 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="78.74" y="205.74" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="TX1"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.17"/>
+<wire x1="210.82" y1="208.28" x2="213.36" y2="208.28" width="0.1524" layer="91"/>
+<label x="213.36" y="208.28" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="RX1" class="0">
 <segment>
 <wire x1="76.2" y1="203.2" x2="78.74" y2="203.2" width="0.1524" layer="91"/>
 <label x="78.74" y="203.2" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="RX1"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.15"/>
+<wire x1="210.82" y1="213.36" x2="213.36" y2="213.36" width="0.1524" layer="91"/>
+<label x="213.36" y="213.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="I2C_!INT!" class="0">
@@ -21204,12 +21224,22 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="27.94" y="187.96" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="J1" gate="J1" pin="I2C_SCL"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.11(TRACEDATA2)"/>
+<wire x1="210.82" y1="223.52" x2="213.36" y2="223.52" width="0.1524" layer="91"/>
+<label x="213.36" y="223.52" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
 <wire x1="30.48" y1="185.42" x2="27.94" y2="185.42" width="0.1524" layer="91"/>
 <label x="27.94" y="185.42" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="J1" gate="J1" pin="I2C_SDA"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.08"/>
+<wire x1="210.82" y1="231.14" x2="213.36" y2="231.14" width="0.1524" layer="91"/>
+<label x="213.36" y="231.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PDM_DATA" class="0">
@@ -21232,12 +21262,22 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="78.74" y="254" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="SPI_SCK/SDIO_CLK"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P1.00(TRACEDATA0)"/>
+<wire x1="165.1" y1="228.6" x2="162.56" y2="228.6" width="0.1524" layer="91"/>
+<label x="162.56" y="228.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SPI_MISO" class="0">
 <segment>
 <wire x1="76.2" y1="248.92" x2="78.74" y2="248.92" width="0.1524" layer="91"/>
 <label x="78.74" y="248.92" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="SPI_MISO/SDIO_DATA0"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P1.02"/>
+<wire x1="165.1" y1="223.52" x2="162.56" y2="223.52" width="0.1524" layer="91"/>
+<label x="162.56" y="223.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SPI_MOSI" class="0">
@@ -21246,12 +21286,22 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="78.74" y="251.46" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="SPI_MOSI/SDIO_CMD"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P1.01"/>
+<wire x1="165.1" y1="226.06" x2="162.56" y2="226.06" width="0.1524" layer="91"/>
+<label x="162.56" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SPI_!CS!" class="0">
 <segment>
 <wire x1="76.2" y1="241.3" x2="78.74" y2="241.3" width="0.1524" layer="91"/>
 <label x="78.74" y="241.3" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="SPI_!CS!/SDIO_DATA3"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P1.05"/>
+<wire x1="165.1" y1="215.9" x2="162.56" y2="215.9" width="0.1524" layer="91"/>
+<label x="162.56" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BATT_VIN/3" class="0">
@@ -21310,6 +21360,11 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="60.96" y1="111.76" x2="58.42" y2="111.76" width="0.1524" layer="91"/>
 <label x="58.42" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.07(TRACECLK)"/>
+<wire x1="210.82" y1="233.68" x2="213.36" y2="233.68" width="0.1524" layer="91"/>
+<label x="213.36" y="233.68" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SCL1" class="0">
 <segment>
@@ -21331,12 +21386,22 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="78.74" y="246.38" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="SDIO_DATA1"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P1.03"/>
+<wire x1="165.1" y1="220.98" x2="162.56" y2="220.98" width="0.1524" layer="91"/>
+<label x="162.56" y="220.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SDIO_DATA2" class="0">
 <segment>
 <wire x1="76.2" y1="243.84" x2="78.74" y2="243.84" width="0.1524" layer="91"/>
 <label x="78.74" y="243.84" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="SDIO_DATA2"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P1.04"/>
+<wire x1="165.1" y1="218.44" x2="162.56" y2="218.44" width="0.1524" layer="91"/>
+<label x="162.56" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ADC_D-" class="0">
@@ -21359,6 +21424,11 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="78.74" y="231.14" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="J1" gate="J1" pin="SPI_MISO1"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.31(AIN7)"/>
+<wire x1="210.82" y1="172.72" x2="213.36" y2="172.72" width="0.1524" layer="91"/>
+<label x="213.36" y="172.72" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="CTS1" class="0">
 <segment>
@@ -21380,6 +21450,11 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="78.74" y="175.26" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="G5/BUS5"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P1.11"/>
+<wire x1="165.1" y1="200.66" x2="162.56" y2="200.66" width="0.1524" layer="91"/>
+<label x="162.56" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="GPIO7" class="0">
 <segment>
@@ -21387,12 +21462,22 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="78.74" y="170.18" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="G7/BUS7"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P1.13"/>
+<wire x1="165.1" y1="195.58" x2="162.56" y2="195.58" width="0.1524" layer="91"/>
+<label x="162.56" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="GPIO6" class="0">
 <segment>
 <wire x1="76.2" y1="172.72" x2="78.74" y2="172.72" width="0.1524" layer="91"/>
 <label x="78.74" y="172.72" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="G6/BUS6"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P1.12"/>
+<wire x1="165.1" y1="198.12" x2="162.56" y2="198.12" width="0.1524" layer="91"/>
+<label x="162.56" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -21451,12 +21536,22 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="78.74" y="185.42" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="G1/BUS1"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P1.07"/>
+<wire x1="165.1" y1="210.82" x2="162.56" y2="210.82" width="0.1524" layer="91"/>
+<label x="162.56" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="GPIO3" class="0">
 <segment>
 <wire x1="76.2" y1="180.34" x2="78.74" y2="180.34" width="0.1524" layer="91"/>
 <label x="78.74" y="180.34" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="G3/BUS3"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P1.09(TRACEDATA3)"/>
+<wire x1="165.1" y1="205.74" x2="162.56" y2="205.74" width="0.1524" layer="91"/>
+<label x="162.56" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO2" class="0">
@@ -21465,6 +21560,11 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="78.74" y="182.88" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="G2/BUS2"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P1.08"/>
+<wire x1="165.1" y1="208.28" x2="162.56" y2="208.28" width="0.1524" layer="91"/>
+<label x="162.56" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="GPIO4" class="0">
 <segment>
@@ -21472,12 +21572,22 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="78.74" y="177.8" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="G4/BUS4"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P1.10"/>
+<wire x1="165.1" y1="203.2" x2="162.56" y2="203.2" width="0.1524" layer="91"/>
+<label x="162.56" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="GPIO0" class="0">
 <segment>
 <wire x1="76.2" y1="187.96" x2="78.74" y2="187.96" width="0.1524" layer="91"/>
 <label x="78.74" y="187.96" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="G0/BUS0"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P1.06"/>
+<wire x1="165.1" y1="213.36" x2="162.56" y2="213.36" width="0.1524" layer="91"/>
+<label x="162.56" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="3.3V_EN" class="0">
@@ -21537,6 +21647,54 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="223.52" y1="256.54" x2="223.52" y2="259.08" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="256.54" x2="223.52" y2="256.54" width="0.1524" layer="91"/>
 <junction x="223.52" y="256.54"/>
+</segment>
+</net>
+<net name="NFC1" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.09(NFC1)"/>
+<wire x1="210.82" y1="228.6" x2="213.36" y2="228.6" width="0.1524" layer="91"/>
+<label x="213.36" y="228.6" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J1" pin="CAN-TX"/>
+<wire x1="30.48" y1="218.44" x2="27.94" y2="218.44" width="0.1524" layer="91"/>
+<label x="27.94" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="NFC2" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.10(NFC2)"/>
+<wire x1="210.82" y1="226.06" x2="213.36" y2="226.06" width="0.1524" layer="91"/>
+<label x="213.36" y="226.06" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J1" pin="CAN-RX"/>
+<wire x1="30.48" y1="215.9" x2="27.94" y2="215.9" width="0.1524" layer="91"/>
+<label x="27.94" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="RX2" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.19"/>
+<wire x1="210.82" y1="203.2" x2="213.36" y2="203.2" width="0.1524" layer="91"/>
+<label x="213.36" y="203.2" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J1" pin="RX2"/>
+<wire x1="76.2" y1="193.04" x2="78.74" y2="193.04" width="0.1524" layer="91"/>
+<label x="78.74" y="193.04" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="TX2" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.20"/>
+<wire x1="210.82" y1="200.66" x2="213.36" y2="200.66" width="0.1524" layer="91"/>
+<label x="213.36" y="200.66" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J1" pin="TX2"/>
+<wire x1="76.2" y1="195.58" x2="78.74" y2="195.58" width="0.1524" layer="91"/>
+<label x="78.74" y="195.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
