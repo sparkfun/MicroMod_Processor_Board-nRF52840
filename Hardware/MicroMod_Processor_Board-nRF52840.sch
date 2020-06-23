@@ -21267,9 +21267,9 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pinref part="J2" gate="J1" pin="AUD_LRCLK"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="P1.02"/>
-<wire x1="165.1" y1="223.52" x2="162.56" y2="223.52" width="0.1524" layer="91"/>
-<label x="162.56" y="223.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="P0.26"/>
+<wire x1="210.82" y1="185.42" x2="213.36" y2="185.42" width="0.1524" layer="91"/>
+<label x="213.36" y="185.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PDM_CLK" class="0">
@@ -21557,9 +21557,9 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pinref part="J2" gate="J1" pin="RTS1"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="P0.26"/>
-<wire x1="210.82" y1="185.42" x2="213.36" y2="185.42" width="0.1524" layer="91"/>
-<label x="213.36" y="185.42" size="1.27" layer="95" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="P1.02"/>
+<wire x1="165.1" y1="223.52" x2="162.56" y2="223.52" width="0.1524" layer="91"/>
+<label x="162.56" y="223.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO5" class="0">
