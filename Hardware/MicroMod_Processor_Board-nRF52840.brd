@@ -2906,29 +2906,33 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="0" name="default" width="0.000153125" drill="0.00030625">
 </class>
 </classes>
-<designrules name="SparkFun-4-layer-MicroMod">
-<description language="en">&lt;b&gt;SparkFun 2 Layer Design Rule Checks - Limits for PCBWay&lt;/b&gt;
+<designrules name="SparkFun-4-layer-FAB-LIMIT">
+<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
- If you're ordering from PCBWay, these are the 'free' minimums.</description>
-<param name="layerSetup" value="(1+2*15+16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="4mil"/>
-<param name="mdWirePad" value="4mil"/>
-<param name="mdWireVia" value="4mil"/>
-<param name="mdPadPad" value="4mil"/>
-<param name="mdPadVia" value="4mil"/>
-<param name="mdViaVia" value="4mil"/>
-<param name="mdSmdPad" value="4mil"/>
-<param name="mdSmdVia" value="4mil"/>
-<param name="mdSmdSmd" value="4mil"/>
+The default Design Rules have been set to cover
+a wide range of applications. Your particular design
+may have different requirements, so please make the
+necessary adjustments and save your customized
+design rules under a new name.</description>
+<param name="layerSetup" value="(1*2*15*16)"/>
+<param name="mtCopper" value="0.035559375mm 0.035559375mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035559375mm 0.035559375mm"/>
+<param name="mtIsolate" value="0.47751875mm 0.47751875mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.47751875mm"/>
+<param name="mdWireWire" value="5mil"/>
+<param name="mdWirePad" value="5mil"/>
+<param name="mdWireVia" value="5mil"/>
+<param name="mdPadPad" value="5mil"/>
+<param name="mdPadVia" value="5mil"/>
+<param name="mdViaVia" value="5mil"/>
+<param name="mdSmdPad" value="5mil"/>
+<param name="mdSmdVia" value="5mil"/>
+<param name="mdSmdSmd" value="5mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="6mil"/>
-<param name="mdDrill" value="6mil"/>
+<param name="mdCopperDimension" value="4mil"/>
+<param name="mdDrill" value="4mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="4mil"/>
-<param name="msDrill" value="0.2mm"/>
+<param name="msDrill" value="6mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -2938,19 +2942,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="3mil"/>
+<param name="rlMinPadTop" value="5mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="3mil"/>
+<param name="rlMinPadInner" value="6mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="3mil"/>
+<param name="rlMinPadBottom" value="5mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="3mil"/>
+<param name="rlMinViaOuter" value="5mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="3mil"/>
+<param name="rlMinViaInner" value="6mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="3mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="3mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
@@ -3359,17 +3363,33 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="GPIO5">
 <contactref element="J2" pad="73"/>
 <contactref element="U2" pad="3"/>
-<wire x1="2.25" y1="1.275" x2="8.41" y2="6.78" width="0" layer="19" extent="1-1"/>
+<wire x1="2.25" y1="1.275" x2="2.25" y2="3.139" width="0.1016" layer="1"/>
+<wire x1="8.41" y1="5.743" x2="8.41" y2="6.78" width="0.1016" layer="1"/>
+<wire x1="2.25" y1="3.139" x2="3.683" y2="4.572" width="0.1016" layer="1"/>
+<wire x1="3.683" y1="4.572" x2="7.239" y2="4.572" width="0.1016" layer="1"/>
+<wire x1="7.239" y1="4.572" x2="8.41" y2="5.743" width="0.1016" layer="1"/>
 </signal>
 <signal name="GPIO7">
 <contactref element="J2" pad="69"/>
 <contactref element="U2" pad="56"/>
-<wire x1="3.25" y1="1.275" x2="10.81" y2="9.43" width="0" layer="19" extent="1-1"/>
+<wire x1="3.25" y1="1.275" x2="3.25" y2="2.996" width="0.1016" layer="1"/>
+<wire x1="7.4283875" y1="4.1148" x2="9.144" y2="5.8304125" width="0.1016" layer="1"/>
+<wire x1="9.811" y1="9.43" x2="10.81" y2="9.43" width="0.1016" layer="1"/>
+<wire x1="3.25" y1="2.996" x2="4.3688" y2="4.1148" width="0.1016" layer="1"/>
+<wire x1="4.3688" y1="4.1148" x2="7.4283875" y2="4.1148" width="0.1016" layer="1"/>
+<wire x1="9.144" y1="5.8304125" x2="9.144" y2="8.763" width="0.1016" layer="1"/>
+<wire x1="9.144" y1="8.763" x2="9.811" y2="9.43" width="0.1016" layer="1"/>
 </signal>
 <signal name="GPIO6">
 <contactref element="J2" pad="71"/>
 <contactref element="U2" pad="57"/>
-<wire x1="2.75" y1="1.275" x2="10.81" y2="10.23" width="0" layer="19" extent="1-1"/>
+<wire x1="2.75" y1="1.275" x2="2.75" y2="3.131" width="0.1016" layer="1"/>
+<wire x1="3.9624" y1="4.3434" x2="7.33369375" y2="4.3434" width="0.1016" layer="1"/>
+<wire x1="7.33369375" y1="4.3434" x2="8.89" y2="5.89970625" width="0.1016" layer="1"/>
+<wire x1="8.89" y1="5.89970625" x2="8.89" y2="9.017" width="0.1016" layer="1"/>
+<wire x1="8.89" y1="9.017" x2="10.103" y2="10.23" width="0.1016" layer="1"/>
+<wire x1="10.103" y1="10.23" x2="10.81" y2="10.23" width="0.1016" layer="1"/>
+<wire x1="2.75" y1="3.131" x2="3.9624" y2="4.3434" width="0.1016" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="D2" pad="A"/>
@@ -3389,27 +3409,53 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="GPIO1">
 <contactref element="J2" pad="42"/>
 <contactref element="U2" pad="7"/>
-<wire x1="10" y1="1.525" x2="11.21" y2="7.68" width="0" layer="19" extent="1-16"/>
+<wire x1="10" y1="1.525" x2="10" y2="3.269" width="0.1016" layer="16"/>
+<wire x1="10" y1="3.269" x2="10.033" y2="3.302" width="0.1016" layer="16"/>
+<via x="10.033" y="3.302" extent="1-16" drill="0.2032"/>
+<wire x1="10.033" y1="3.302" x2="10.033" y2="4.445" width="0.1016" layer="1"/>
+<wire x1="11.21" y1="5.622" x2="11.21" y2="7.68" width="0.1016" layer="1"/>
+<wire x1="10.033" y1="4.445" x2="11.21" y2="5.622" width="0.1016" layer="1"/>
 </signal>
 <signal name="GPIO3">
 <contactref element="J2" pad="46"/>
 <contactref element="U2" pad="5"/>
-<wire x1="9" y1="1.525" x2="10.41" y2="7.68" width="0" layer="19" extent="1-16"/>
+<wire x1="9" y1="1.525" x2="9" y2="3.285" width="0.1016" layer="16"/>
+<wire x1="9" y1="3.285" x2="9.017" y2="3.302" width="0.1016" layer="16"/>
+<via x="9.017" y="3.302" extent="1-16" drill="0.2032"/>
+<wire x1="9.017" y1="3.302" x2="9.017" y2="4.318" width="0.1016" layer="1"/>
+<wire x1="9.017" y1="4.318" x2="10.414" y2="5.715" width="0.1016" layer="1"/>
+<wire x1="10.414" y1="5.715" x2="10.414" y2="7.676" width="0.1016" layer="1"/>
+<wire x1="10.414" y1="7.676" x2="10.41" y2="7.68" width="0.1016" layer="1"/>
 </signal>
 <signal name="GPIO2">
 <contactref element="J2" pad="44"/>
 <contactref element="U2" pad="6"/>
-<wire x1="9.5" y1="1.525" x2="10.81" y2="6.78" width="0" layer="19" extent="1-16"/>
+<wire x1="9.5" y1="1.525" x2="9.5" y2="2.896" width="0.1016" layer="16"/>
+<wire x1="9.5" y1="2.896" x2="9.525" y2="2.921" width="0.1016" layer="16"/>
+<via x="9.525" y="2.921" extent="1-16" drill="0.2032"/>
+<wire x1="9.525" y1="2.921" x2="9.525" y2="4.445" width="0.1016" layer="1"/>
+<wire x1="10.81" y1="5.73" x2="10.81" y2="6.78" width="0.1016" layer="1"/>
+<wire x1="9.525" y1="4.445" x2="10.81" y2="5.73" width="0.1016" layer="1"/>
 </signal>
 <signal name="GPIO4">
 <contactref element="J2" pad="48"/>
 <contactref element="U2" pad="4"/>
-<wire x1="8.5" y1="1.525" x2="10.01" y2="6.78" width="0" layer="19" extent="1-16"/>
+<wire x1="8.5" y1="1.525" x2="8.5" y2="2.912" width="0.1016" layer="16"/>
+<wire x1="8.5" y1="2.912" x2="8.509" y2="2.921" width="0.1016" layer="16"/>
+<via x="8.509" y="2.921" extent="1-16" drill="0.2032"/>
+<wire x1="8.509" y1="2.921" x2="8.509" y2="4.191" width="0.1016" layer="1"/>
+<wire x1="10.01" y1="5.692" x2="10.01" y2="6.78" width="0.1016" layer="1"/>
+<wire x1="8.509" y1="4.191" x2="10.01" y2="5.692" width="0.1016" layer="1"/>
 </signal>
 <signal name="GPIO0">
 <contactref element="J2" pad="40"/>
 <contactref element="U2" pad="8"/>
-<wire x1="10.5" y1="1.525" x2="11.61" y2="6.78" width="0" layer="19" extent="1-16"/>
+<wire x1="10.5" y1="1.525" x2="10.5" y2="2.88" width="0.1016" layer="16"/>
+<wire x1="10.5" y1="2.88" x2="10.541" y2="2.921" width="0.1016" layer="16"/>
+<via x="10.541" y="2.921" extent="1-16" drill="0.2032"/>
+<wire x1="10.541" y1="2.921" x2="10.541" y2="4.445" width="0.1016" layer="1"/>
+<wire x1="11.61" y1="5.514" x2="11.61" y2="6.78" width="0.1016" layer="1"/>
+<wire x1="10.541" y1="4.445" x2="11.61" y2="5.514" width="0.1016" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R2" pad="2"/>
