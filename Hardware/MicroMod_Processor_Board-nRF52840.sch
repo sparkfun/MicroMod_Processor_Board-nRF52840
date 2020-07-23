@@ -20879,6 +20879,8 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <text x="383.54" y="10.16" size="2.54" layer="94">Priyanka Makin</text>
 <text x="421.64" y="7.62" size="2.54" layer="94">v1.0</text>
 <text x="53.34" y="60.96" size="2.54" layer="94" align="center">128Mb Flash</text>
+<text x="33.02" y="144.78" size="2.54" layer="96">USB_VIN = -0.3 to +5.8V</text>
+<text x="172.72" y="147.32" size="2.54" layer="96">VDD = -0.3 to +3.9V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
