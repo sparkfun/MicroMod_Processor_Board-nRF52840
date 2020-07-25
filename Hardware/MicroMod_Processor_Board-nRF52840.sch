@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -18420,6 +18420,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
+<symbol name="V_USB">
+<description>&lt;h3&gt;USB Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="V_USB" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -18441,6 +18448,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Power supply symbol for a specifically-stated 3.3V source.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="3.3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="V_USB" prefix="SUPPLY">
+<description>&lt;h3&gt;USB Voltage Supply&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="V_USB" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -18697,6 +18717,30 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 </technologies>
 </device>
 <device name="-0402-10V-10%-X7R" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-15083" constant="no"/>
+<attribute name="VALUE" value="0.1uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402T-6.3V-10%-X7R" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-14993" constant="no"/>
+<attribute name="VALUE" value="0.1uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402T-10V-10%-X7R" package="0402-TIGHT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -19178,6 +19222,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-09334"/>
 <attribute name="VALUE" value="27"/>
 </technology>
+</technologies>
+</device>
+<device name="" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -19981,6 +20034,55 @@ Out</text>
 <text x="0" y="0.635" size="0.762" layer="25" align="center">&gt;Name</text>
 <text x="0" y="-0.635" size="0.762" layer="27" align="center">&gt;Value</text>
 </package>
+<package name="WSON-8-6X5-SKINNY_CENTERPAD">
+<wire x1="-3" y1="2.5" x2="3" y2="2.5" width="0.05" layer="51"/>
+<wire x1="3" y1="2.5" x2="3" y2="-2.5" width="0.05" layer="51"/>
+<wire x1="3" y1="-2.5" x2="-3" y2="-2.5" width="0.05" layer="51"/>
+<wire x1="-3" y1="-2.5" x2="-3" y2="2.5" width="0.05" layer="51"/>
+<smd name="1" x="-2.775" y="1.905" dx="0.5" dy="0.85" layer="1" rot="R90"/>
+<circle x="-3.3375" y="2.7" radius="0.05" width="0.3" layer="21"/>
+<rectangle x1="2.4" y1="0.4375" x2="3" y2="0.8375" layer="51"/>
+<smd name="2" x="-2.775" y="0.635" dx="0.5" dy="0.85" layer="1" rot="R90"/>
+<smd name="3" x="-2.775" y="-0.635" dx="0.5" dy="0.85" layer="1" rot="R90"/>
+<smd name="4" x="-2.775" y="-1.905" dx="0.5" dy="0.85" layer="1" rot="R90"/>
+<smd name="6" x="2.775" y="-0.635" dx="0.5" dy="0.85" layer="1" rot="R90"/>
+<smd name="5" x="2.775" y="-1.905" dx="0.5" dy="0.85" layer="1" rot="R90"/>
+<smd name="7" x="2.775" y="0.635" dx="0.5" dy="0.85" layer="1" rot="R90"/>
+<smd name="8" x="2.775" y="1.905" dx="0.5" dy="0.85" layer="1" rot="R90"/>
+<wire x1="-3" y1="2.6" x2="3" y2="2.6" width="0.1524" layer="21"/>
+<wire x1="-3" y1="-2.6" x2="3" y2="-2.6" width="0.1524" layer="21"/>
+<rectangle x1="2.4" y1="-2.1" x2="3" y2="-1.7" layer="51"/>
+<rectangle x1="2.4" y1="-0.8375" x2="3" y2="-0.4375" layer="51"/>
+<rectangle x1="2.4" y1="1.7" x2="3" y2="2.1" layer="51"/>
+<rectangle x1="-3" y1="1.7" x2="-2.4" y2="2.1" layer="51"/>
+<rectangle x1="-3" y1="0.425" x2="-2.4" y2="0.825" layer="51"/>
+<rectangle x1="-3" y1="-0.8375" x2="-2.4" y2="-0.4375" layer="51"/>
+<rectangle x1="-3" y1="-2.1" x2="-2.4" y2="-1.7" layer="51"/>
+<polygon width="0.05" layer="51">
+<vertex x="-1.7" y="1.4"/>
+<vertex x="-1.1" y="2"/>
+<vertex x="1.7" y="2"/>
+<vertex x="1.7" y="-2"/>
+<vertex x="-1.7" y="-2"/>
+</polygon>
+<polygon width="0.05" layer="1">
+<vertex x="-0.43" y="1.4"/>
+<vertex x="0.17" y="2"/>
+<vertex x="0.43" y="2"/>
+<vertex x="0.43" y="-2"/>
+<vertex x="-0.43" y="-2"/>
+</polygon>
+<polygon width="0.05" layer="29">
+<vertex x="-0.53" y="1.475"/>
+<vertex x="0.12" y="2.125"/>
+<vertex x="0.53" y="2.125"/>
+<vertex x="0.53" y="-2.1"/>
+<vertex x="-0.53" y="-2.1"/>
+</polygon>
+<rectangle x1="-0.4" y1="-0.4" x2="0.4" y2="0.4" layer="31"/>
+<text x="0" y="3.175" size="0.762" layer="25" align="center">&gt;Name</text>
+<text x="0" y="-3.175" size="0.762" layer="27" align="center">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="W25QXX">
@@ -20109,6 +20211,23 @@ Out</text>
 </technologies>
 </device>
 <device name="128MBIT-6X5-NO_CENTER" package="WSON-8-6X5-NO_CENTERPAD">
+<connects>
+<connect gate="U1" pin="!CS!" pad="1"/>
+<connect gate="U1" pin="CLK" pad="6"/>
+<connect gate="U1" pin="D0/DI" pad="5"/>
+<connect gate="U1" pin="D1/DO" pad="2"/>
+<connect gate="U1" pin="D2/!WP!" pad="3"/>
+<connect gate="U1" pin="D3/!HOLD!" pad="7"/>
+<connect gate="U1" pin="GND" pad="4"/>
+<connect gate="U1" pin="VDD" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-15107" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="128MBIT-6X5-SKINNY_CENTER" package="WSON-8-6X5-SKINNY_CENTERPAD">
 <connects>
 <connect gate="U1" pin="!CS!" pad="1"/>
 <connect gate="U1" pin="CLK" pad="6"/>
@@ -20820,7 +20939,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="D2" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
+<part name="D1" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="1KOHM" device="-0402T-1/16W-1%" value="1k"/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="FD1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL" value="FIDUCIALUFIDUCIAL"/>
@@ -20838,8 +20957,8 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U2" library="nrf52840" deviceset="MDBT50Q" device=""/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R2" library="SparkFun-Resistors" deviceset="27OHM" device="-0603-1/10W-1%" value="27"/>
-<part name="R3" library="SparkFun-Resistors" deviceset="27OHM" device="-0603-1/10W-1%" value="27"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="27OHM" device="" value="27OHM"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="27OHM" device="" value="27OHM"/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="Y1" library="SparkFun-Clocks" deviceset="CRYSTAL-32.768KHZ" device="SMD-3.2X1.5" value="32.768kHz"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="15PF" device="-0402T-50V-5%" value="15pF"/>
@@ -20854,11 +20973,13 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="J2" library="SparkFun-MicroMod" deviceset="MICROMOD" device="-2222"/>
+<part name="J1" library="SparkFun-MicroMod" deviceset="MICROMOD" device="-2222"/>
 <part name="R4" library="SparkFun-Resistors" deviceset="10KOHM" device="-0402T-1/16W-1%" value="10k"/>
 <part name="R5" library="SparkFun-Resistors" deviceset="10KOHM" device="-0402T-1/16W-1%" value="10k"/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
+<part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20872,15 +20993,14 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="104.14" y1="68.58" x2="104.14" y2="0" width="0.2032" layer="97" style="longdash"/>
 <wire x1="104.14" y1="68.58" x2="0" y2="68.58" width="0.2032" layer="97" style="longdash"/>
 <text x="56.134" y="124.206" size="2.54" layer="94" font="vector" align="center">Status LED</text>
-<text x="16.256" y="262.382" size="1.778" layer="97">0.65uA Leakage
-0.3V drop at 10mA</text>
 <text x="345.44" y="17.78" size="2.54" layer="94">MicroMod-nRF52840-Processor-Board</text>
 <text x="355.6" y="10.16" size="2.54" layer="94">Paul Clark</text>
 <text x="383.54" y="10.16" size="2.54" layer="94">Priyanka Makin</text>
-<text x="421.64" y="7.62" size="2.54" layer="94">v1.0</text>
+<text x="421.64" y="7.62" size="2.54" layer="94">v01</text>
 <text x="53.34" y="60.96" size="2.54" layer="94" align="center">128Mb Flash</text>
-<text x="33.02" y="144.78" size="2.54" layer="96">USB_VIN = -0.3 to +5.8V</text>
-<text x="172.72" y="147.32" size="2.54" layer="96">VDD = -0.3 to +3.9V</text>
+<text x="33.02" y="144.78" size="2.54" layer="96">Voltage Range: 4.45 to 5.25V</text>
+<text x="172.72" y="147.32" size="2.54" layer="96">Voltage Range: 1.7 to 5.5V</text>
+<text x="190.754" y="268.986" size="2.54" layer="94" font="vector" align="center">nRF52840</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -20893,7 +21013,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <instance part="GND1" gate="1" x="27.94" y="154.94" smashed="yes">
 <attribute name="VALUE" x="27.94" y="154.686" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="D2" gate="G$1" x="60.96" y="93.98" smashed="yes">
+<instance part="D1" gate="G$1" x="60.96" y="93.98" smashed="yes">
 <attribute name="NAME" x="57.531" y="89.408" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="62.865" y="89.408" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
@@ -20938,29 +21058,27 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 </instance>
 <instance part="R2" gate="G$1" x="157.48" y="238.76" smashed="yes">
 <attribute name="NAME" x="154.94" y="240.284" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="160.02" y="242.316" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="R3" gate="G$1" x="157.48" y="236.22" smashed="yes">
 <attribute name="NAME" x="154.94" y="232.664" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="162.56" y="234.696" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="SUPPLY3" gate="G$1" x="162.56" y="256.54" smashed="yes">
 <attribute name="VALUE" x="162.56" y="259.334" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="Y1" gate="G$1" x="218.44" y="256.54" smashed="yes">
-<attribute name="NAME" x="218.44" y="258.572" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="218.44" y="254.508" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="Y1" gate="G$1" x="241.3" y="246.38" smashed="yes" rot="R270">
+<attribute name="NAME" x="243.332" y="246.38" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="239.268" y="246.38" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
 </instance>
-<instance part="C2" gate="G$1" x="223.52" y="261.62" smashed="yes">
-<attribute name="NAME" x="225.044" y="267.081" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="225.044" y="264.541" size="1.778" layer="96" font="vector"/>
+<instance part="C2" gate="G$1" x="246.38" y="241.3" smashed="yes" rot="R270">
+<attribute name="NAME" x="251.841" y="239.776" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="249.301" y="239.776" size="1.778" layer="96" font="vector" rot="R270"/>
 </instance>
-<instance part="C3" gate="G$1" x="213.36" y="261.62" smashed="yes">
-<attribute name="NAME" x="214.884" y="267.081" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="214.884" y="264.541" size="1.778" layer="96" font="vector"/>
+<instance part="C3" gate="G$1" x="246.38" y="251.46" smashed="yes" rot="R270">
+<attribute name="NAME" x="251.841" y="249.936" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="249.301" y="249.936" size="1.778" layer="96" font="vector" rot="R270"/>
 </instance>
-<instance part="GND5" gate="1" x="205.74" y="264.16" smashed="yes">
-<attribute name="VALUE" x="205.74" y="263.906" size="1.778" layer="96" align="top-center"/>
+<instance part="GND5" gate="1" x="254" y="233.68" smashed="yes">
+<attribute name="VALUE" x="254" y="233.426" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="C4" gate="G$1" x="223.52" y="149.86" smashed="yes">
 <attribute name="NAME" x="225.044" y="152.781" size="1.778" layer="95" font="vector"/>
@@ -20992,7 +21110,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <instance part="SUPPLY6" gate="G$1" x="243.84" y="157.48" smashed="yes">
 <attribute name="VALUE" x="243.84" y="160.274" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="J2" gate="J1" x="53.34" y="203.2" smashed="yes">
+<instance part="J1" gate="J1" x="53.34" y="203.2" smashed="yes">
 <attribute name="NAME" x="33.02" y="257.048" size="1.778" layer="95"/>
 <attribute name="VALUE" x="33.02" y="154.94" size="1.778" layer="96"/>
 </instance>
@@ -21009,6 +21127,12 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 </instance>
 <instance part="SUPPLY8" gate="G$1" x="241.3" y="220.98" smashed="yes">
 <attribute name="VALUE" x="241.3" y="223.774" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY9" gate="G$1" x="25.4" y="238.76" smashed="yes">
+<attribute name="VALUE" x="25.4" y="241.554" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY10" gate="G$1" x="157.48" y="251.46" smashed="yes">
+<attribute name="VALUE" x="157.48" y="254.254" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -21053,7 +21177,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="30.48" y1="254" x2="27.94" y2="254" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
 <wire x1="27.94" y1="254" x2="27.94" y2="256.54" width="0.1524" layer="91"/>
-<pinref part="J2" gate="J1" pin="3.3V"/>
+<pinref part="J1" gate="J1" pin="3.3V"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
@@ -21071,10 +21195,10 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="30.48" y1="160.02" x2="27.94" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="27.94" y1="160.02" x2="27.94" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="J2" gate="J1" pin="GND"/>
+<pinref part="J1" gate="J1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="D2" gate="G$1" pin="C"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="60.96" y1="86.36" x2="60.96" y2="88.9" width="0.1524" layer="91"/>
 </segment>
@@ -21094,17 +21218,6 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="266.7" x2="213.36" y2="269.24" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="269.24" x2="223.52" y2="269.24" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="223.52" y1="269.24" x2="223.52" y2="266.7" width="0.1524" layer="91"/>
-<pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="213.36" y1="269.24" x2="205.74" y2="269.24" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="269.24" x2="205.74" y2="266.7" width="0.1524" layer="91"/>
-<junction x="213.36" y="269.24"/>
-</segment>
-<segment>
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="243.84" y1="144.78" x2="243.84" y2="147.32" width="0.1524" layer="91"/>
@@ -21119,12 +21232,22 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="223.52" y1="144.78" x2="223.52" y2="147.32" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="251.46" y1="251.46" x2="254" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="254" y1="251.46" x2="254" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="254" y1="241.3" x2="251.46" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="254" y1="241.3" x2="254" y2="236.22" width="0.1524" layer="91"/>
+<junction x="254" y="241.3"/>
+</segment>
 </net>
 <net name="!RESET!" class="0">
 <segment>
 <wire x1="30.48" y1="251.46" x2="27.94" y2="251.46" width="0.1524" layer="91"/>
 <label x="27.94" y="251.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="!RESET!"/>
+<pinref part="J1" gate="J1" pin="!RESET!"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.18(NRESET)"/>
@@ -21141,7 +21264,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="30.48" y1="248.92" x2="27.94" y2="248.92" width="0.1524" layer="91"/>
 <label x="27.94" y="248.92" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="!BOOT!"/>
+<pinref part="J1" gate="J1" pin="!BOOT!"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.13"/>
@@ -21157,7 +21280,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="30.48" y1="210.82" x2="27.94" y2="210.82" width="0.1524" layer="91"/>
 <label x="27.94" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="SWDIO"/>
+<pinref part="J1" gate="J1" pin="SWDIO"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="SWDIO"/>
@@ -21169,7 +21292,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="30.48" y1="208.28" x2="27.94" y2="208.28" width="0.1524" layer="91"/>
 <label x="27.94" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="SWDCK"/>
+<pinref part="J1" gate="J1" pin="SWDCK"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="SWDCLK"/>
@@ -21181,7 +21304,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="236.22" x2="78.74" y2="236.22" width="0.1524" layer="91"/>
 <label x="78.74" y="236.22" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="SPI_SCK1"/>
+<pinref part="J1" gate="J1" pin="SPI_SCK1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.28(AIN4)"/>
@@ -21193,7 +21316,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="233.68" x2="78.74" y2="233.68" width="0.1524" layer="91"/>
 <label x="78.74" y="233.68" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="SPI_MOSI1"/>
+<pinref part="J1" gate="J1" pin="SPI_MOSI1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.31(AIN7)"/>
@@ -21205,7 +21328,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="205.74" x2="78.74" y2="205.74" width="0.1524" layer="91"/>
 <label x="78.74" y="205.74" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="TX1"/>
+<pinref part="J1" gate="J1" pin="TX1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.15"/>
@@ -21217,7 +21340,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="203.2" x2="78.74" y2="203.2" width="0.1524" layer="91"/>
 <label x="78.74" y="203.2" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="RX1"/>
+<pinref part="J1" gate="J1" pin="RX1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.17"/>
@@ -21229,7 +21352,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="30.48" y1="182.88" x2="27.94" y2="182.88" width="0.1524" layer="91"/>
 <label x="27.94" y="182.88" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="J2" gate="J1" pin="I2C_!INT!"/>
+<pinref part="J1" gate="J1" pin="I2C_!INT!"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P1.03"/>
@@ -21241,7 +21364,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="30.48" y1="187.96" x2="27.94" y2="187.96" width="0.1524" layer="91"/>
 <label x="27.94" y="187.96" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="J2" gate="J1" pin="I2C_SCL"/>
+<pinref part="J1" gate="J1" pin="I2C_SCL"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.11(TRACEDATA2)"/>
@@ -21253,7 +21376,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="30.48" y1="185.42" x2="27.94" y2="185.42" width="0.1524" layer="91"/>
 <label x="27.94" y="185.42" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="J2" gate="J1" pin="I2C_SDA"/>
+<pinref part="J1" gate="J1" pin="I2C_SDA"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.08"/>
@@ -21265,7 +21388,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="30.48" y1="195.58" x2="27.94" y2="195.58" width="0.1524" layer="91"/>
 <label x="27.94" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="AUD_LRCLK"/>
+<pinref part="J1" gate="J1" pin="AUD_LRCLK"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.26"/>
@@ -21277,7 +21400,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="30.48" y1="193.04" x2="27.94" y2="193.04" width="0.1524" layer="91"/>
 <label x="27.94" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="AUD_BCLK"/>
+<pinref part="J1" gate="J1" pin="AUD_BCLK"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.25"/>
@@ -21289,7 +21412,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="254" x2="78.74" y2="254" width="0.1524" layer="91"/>
 <label x="78.74" y="254" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="SPI_SCK/SDIO_CLK"/>
+<pinref part="J1" gate="J1" pin="SPI_SCK/SDIO_CLK"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.19"/>
@@ -21306,7 +21429,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="248.92" x2="78.74" y2="248.92" width="0.1524" layer="91"/>
 <label x="78.74" y="248.92" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="SPI_MISO/SDIO_DATA0"/>
+<pinref part="J1" gate="J1" pin="SPI_MISO/SDIO_DATA0"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.21"/>
@@ -21323,7 +21446,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="251.46" x2="78.74" y2="251.46" width="0.1524" layer="91"/>
 <label x="78.74" y="251.46" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="SPI_MOSI/SDIO_CMD"/>
+<pinref part="J1" gate="J1" pin="SPI_MOSI/SDIO_CMD"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.14"/>
@@ -21335,7 +21458,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="241.3" x2="78.74" y2="241.3" width="0.1524" layer="91"/>
 <label x="78.74" y="241.3" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="SPI_!CS!/SDIO_DATA3"/>
+<pinref part="J1" gate="J1" pin="SPI_!CS!/SDIO_DATA3"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P1.00(TRACEDATA0)"/>
@@ -21352,7 +21475,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="30.48" y1="172.72" x2="27.94" y2="172.72" width="0.1524" layer="91"/>
 <label x="27.94" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="BATT_VIN/3"/>
+<pinref part="J1" gate="J1" pin="BATT_VIN/3"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.30(AIN6)"/>
@@ -21364,7 +21487,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="223.52" x2="78.74" y2="223.52" width="0.1524" layer="91"/>
 <label x="78.74" y="223.52" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="A0"/>
+<pinref part="J1" gate="J1" pin="A0"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.04(AIN2)"/>
@@ -21376,7 +21499,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="220.98" x2="78.74" y2="220.98" width="0.1524" layer="91"/>
 <label x="78.74" y="220.98" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="A1"/>
+<pinref part="J1" gate="J1" pin="A1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.05(AIN3)"/>
@@ -21388,7 +21511,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="213.36" x2="78.74" y2="213.36" width="0.1524" layer="91"/>
 <label x="78.74" y="213.36" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="D0"/>
+<pinref part="J1" gate="J1" pin="D0"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.27"/>
@@ -21400,7 +21523,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="210.82" x2="78.74" y2="210.82" width="0.1524" layer="91"/>
 <label x="78.74" y="210.82" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="D1/CAM_TRIG"/>
+<pinref part="J1" gate="J1" pin="D1/CAM_TRIG"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P1.08"/>
@@ -21412,7 +21535,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="218.44" x2="78.74" y2="218.44" width="0.1524" layer="91"/>
 <label x="78.74" y="218.44" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="PWM0"/>
+<pinref part="J1" gate="J1" pin="PWM0"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.06"/>
@@ -21424,7 +21547,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="215.9" x2="78.74" y2="215.9" width="0.1524" layer="91"/>
 <label x="78.74" y="215.9" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="PWM1"/>
+<pinref part="J1" gate="J1" pin="PWM1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.16"/>
@@ -21449,7 +21572,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="30.48" y1="180.34" x2="27.94" y2="180.34" width="0.1524" layer="91"/>
 <label x="27.94" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="I2C_SCL1"/>
+<pinref part="J1" gate="J1" pin="I2C_SCL1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.24"/>
@@ -21461,7 +21584,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="30.48" y1="177.8" x2="27.94" y2="177.8" width="0.1524" layer="91"/>
 <label x="27.94" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="I2C_SDA1"/>
+<pinref part="J1" gate="J1" pin="I2C_SDA1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P1.01"/>
@@ -21473,7 +21596,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="246.38" x2="78.74" y2="246.38" width="0.1524" layer="91"/>
 <label x="78.74" y="246.38" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="SDIO_DATA1"/>
+<pinref part="J1" gate="J1" pin="SDIO_DATA1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.22"/>
@@ -21490,7 +21613,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="243.84" x2="78.74" y2="243.84" width="0.1524" layer="91"/>
 <label x="78.74" y="243.84" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="SDIO_DATA2"/>
+<pinref part="J1" gate="J1" pin="SDIO_DATA2"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.23"/>
@@ -21507,7 +21630,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="165.1" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
 <label x="78.74" y="165.1" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="G9/ADC_D-/CAM_HSYNC"/>
+<pinref part="J1" gate="J1" pin="G9/ADC_D-/CAM_HSYNC"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.03(AIN1)"/>
@@ -21519,7 +21642,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="162.56" x2="78.74" y2="162.56" width="0.1524" layer="91"/>
 <label x="78.74" y="162.56" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="G10/ADC_D+/CAM_VSYNC"/>
+<pinref part="J1" gate="J1" pin="G10/ADC_D+/CAM_VSYNC"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.29(AIN5)"/>
@@ -21531,7 +21654,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="231.14" x2="78.74" y2="231.14" width="0.1524" layer="91"/>
 <label x="78.74" y="231.14" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="SPI_MISO1"/>
+<pinref part="J1" gate="J1" pin="SPI_MISO1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.02(AIN0)"/>
@@ -21544,7 +21667,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="198.12" x2="78.74" y2="198.12" width="0.1524" layer="91"/>
 <label x="78.74" y="198.12" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="CTS1"/>
+<pinref part="J1" gate="J1" pin="CTS1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P1.09(TRACEDATA3)"/>
@@ -21556,7 +21679,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="200.66" x2="78.74" y2="200.66" width="0.1524" layer="91"/>
 <label x="78.74" y="200.66" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="RTS1"/>
+<pinref part="J1" gate="J1" pin="RTS1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P1.02"/>
@@ -21568,7 +21691,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="175.26" x2="78.74" y2="175.26" width="0.1524" layer="91"/>
 <label x="78.74" y="175.26" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="G5/BUS5"/>
+<pinref part="J1" gate="J1" pin="G5/BUS5"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P1.10"/>
@@ -21580,7 +21703,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="170.18" x2="78.74" y2="170.18" width="0.1524" layer="91"/>
 <label x="78.74" y="170.18" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="G7/BUS7"/>
+<pinref part="J1" gate="J1" pin="G7/BUS7"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P1.04"/>
@@ -21592,7 +21715,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="172.72" x2="78.74" y2="172.72" width="0.1524" layer="91"/>
 <label x="78.74" y="172.72" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="G6/BUS6"/>
+<pinref part="J1" gate="J1" pin="G6/BUS6"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P1.06"/>
@@ -21602,7 +21725,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="99.06" x2="60.96" y2="96.52" width="0.1524" layer="91"/>
 </segment>
@@ -21611,7 +21734,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="30.48" y1="233.68" x2="27.94" y2="233.68" width="0.1524" layer="91"/>
 <label x="27.94" y="233.68" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="USB_D-"/>
+<pinref part="J1" gate="J1" pin="USB_D-"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -21623,7 +21746,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="30.48" y1="231.14" x2="27.94" y2="231.14" width="0.1524" layer="91"/>
 <label x="27.94" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="USB_D+"/>
+<pinref part="J1" gate="J1" pin="USB_D+"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -21635,7 +21758,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="228.6" x2="78.74" y2="228.6" width="0.1524" layer="91"/>
 <label x="78.74" y="228.6" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="SPI_!CS!1"/>
+<pinref part="J1" gate="J1" pin="SPI_!CS!1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.20"/>
@@ -21647,7 +21770,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="185.42" x2="78.74" y2="185.42" width="0.1524" layer="91"/>
 <label x="78.74" y="185.42" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="G1/BUS1"/>
+<pinref part="J1" gate="J1" pin="G1/BUS1"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P1.14"/>
@@ -21659,7 +21782,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="180.34" x2="78.74" y2="180.34" width="0.1524" layer="91"/>
 <label x="78.74" y="180.34" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="G3/BUS3"/>
+<pinref part="J1" gate="J1" pin="G3/BUS3"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P1.12"/>
@@ -21671,7 +21794,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="182.88" x2="78.74" y2="182.88" width="0.1524" layer="91"/>
 <label x="78.74" y="182.88" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="G2/BUS2"/>
+<pinref part="J1" gate="J1" pin="G2/BUS2"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P1.13"/>
@@ -21683,7 +21806,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="177.8" x2="78.74" y2="177.8" width="0.1524" layer="91"/>
 <label x="78.74" y="177.8" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="G4/BUS4"/>
+<pinref part="J1" gate="J1" pin="G4/BUS4"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P1.11"/>
@@ -21695,7 +21818,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="187.96" x2="78.74" y2="187.96" width="0.1524" layer="91"/>
 <label x="78.74" y="187.96" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="G0/BUS0"/>
+<pinref part="J1" gate="J1" pin="G0/BUS0"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P1.15"/>
@@ -21720,25 +21843,12 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <net name="N$4" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.00(XL1)"/>
-<wire x1="210.82" y1="251.46" x2="213.36" y2="251.46" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="213.36" y1="251.46" x2="213.36" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="251.46" x2="241.3" y2="251.46" width="0.1524" layer="91"/>
 <pinref part="Y1" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="256.54" x2="213.36" y2="259.08" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="256.54" x2="215.9" y2="256.54" width="0.1524" layer="91"/>
-<junction x="213.36" y="256.54"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="P0.01(XL2)"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="210.82" y1="248.92" x2="223.52" y2="248.92" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="248.92" x2="223.52" y2="256.54" width="0.1524" layer="91"/>
-<pinref part="Y1" gate="G$1" pin="2"/>
-<wire x1="223.52" y1="256.54" x2="223.52" y2="259.08" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="256.54" x2="223.52" y2="256.54" width="0.1524" layer="91"/>
-<junction x="223.52" y="256.54"/>
+<wire x1="241.3" y1="251.46" x2="243.84" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="251.46" x2="241.3" y2="248.92" width="0.1524" layer="91"/>
+<junction x="241.3" y="251.46"/>
 </segment>
 </net>
 <net name="NFC1" class="0">
@@ -21750,7 +21860,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="30.48" y1="218.44" x2="27.94" y2="218.44" width="0.1524" layer="91"/>
 <label x="27.94" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="CAN-TX"/>
+<pinref part="J1" gate="J1" pin="CAN-TX"/>
 </segment>
 </net>
 <net name="NFC2" class="0">
@@ -21762,14 +21872,14 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="30.48" y1="215.9" x2="27.94" y2="215.9" width="0.1524" layer="91"/>
 <label x="27.94" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="CAN-RX"/>
+<pinref part="J1" gate="J1" pin="CAN-RX"/>
 </segment>
 </net>
 <net name="RX2" class="0">
 <segment>
 <wire x1="76.2" y1="193.04" x2="78.74" y2="193.04" width="0.1524" layer="91"/>
 <label x="78.74" y="193.04" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="RX2"/>
+<pinref part="J1" gate="J1" pin="RX2"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P1.05"/>
@@ -21781,7 +21891,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <segment>
 <wire x1="76.2" y1="195.58" x2="78.74" y2="195.58" width="0.1524" layer="91"/>
 <label x="78.74" y="195.58" size="1.27" layer="95" xref="yes"/>
-<pinref part="J2" gate="J1" pin="TX2"/>
+<pinref part="J1" gate="J1" pin="TX2"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="P1.07"/>
@@ -21801,16 +21911,31 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <label x="213.36" y="220.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="USB_VIN" class="0">
+<net name="N$6" class="0">
 <segment>
-<wire x1="30.48" y1="236.22" x2="27.94" y2="236.22" width="0.1524" layer="91"/>
-<label x="27.94" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="J1" pin="USB_VIN"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="241.3" x2="243.84" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="Y1" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="243.84" x2="241.3" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="241.3" x2="228.6" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="241.3" x2="228.6" y2="248.92" width="0.1524" layer="91"/>
+<junction x="241.3" y="241.3"/>
+<pinref part="U2" gate="G$1" pin="P0.01(XL2)"/>
+<wire x1="210.82" y1="248.92" x2="228.6" y2="248.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="V_USB" class="0">
+<segment>
+<pinref part="J1" gate="J1" pin="USB_VIN"/>
+<wire x1="30.48" y1="236.22" x2="25.4" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="236.22" x2="25.4" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="SUPPLY9" gate="G$1" pin="V_USB"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VBUS"/>
-<wire x1="165.1" y1="248.92" x2="160.02" y2="248.92" width="0.1524" layer="91"/>
-<label x="160.02" y="248.92" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="165.1" y1="248.92" x2="157.48" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="248.92" x2="157.48" y2="251.46" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="G$1" pin="V_USB"/>
 </segment>
 </net>
 </nets>
