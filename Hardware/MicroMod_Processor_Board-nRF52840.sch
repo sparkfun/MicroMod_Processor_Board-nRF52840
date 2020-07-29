@@ -21011,7 +21011,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="384.048" y="11.938" size="2.54" layer="94" font="vector" align="center">Priyanka Makin</text>
 <text x="424.434" y="8.382" size="2.54" layer="94" font="vector" align="center">v01</text>
 <text x="53.34" y="60.96" size="2.54" layer="94" font="vector" align="center">128Mb Flash</text>
-<text x="51.054" y="146.05" size="2.54" layer="96" font="vector" align="center">Voltage Range: 4.45 to 5.25V</text>
 <text x="190.5" y="147.828" size="2.54" layer="96" font="vector" align="center">Voltage Range: 1.7 to 5.5V</text>
 <text x="190.754" y="268.986" size="2.54" layer="94" font="vector" align="center">nRF52840</text>
 </plain>
@@ -21070,10 +21069,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="162.56" y="167.386" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="R2" gate="G$1" x="157.48" y="238.76" smashed="yes">
-<attribute name="NAME" x="154.94" y="240.284" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="NAME" x="152.4" y="240.284" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="162.56" y="242.316" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="R3" gate="G$1" x="157.48" y="236.22" smashed="yes">
-<attribute name="NAME" x="154.94" y="232.664" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="NAME" x="152.4" y="232.664" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="162.56" y="234.696" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="SUPPLY3" gate="G$1" x="162.56" y="256.54" smashed="yes">
 <attribute name="VALUE" x="162.56" y="259.334" size="1.778" layer="96" align="bottom-center"/>
