@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
@@ -23,7 +23,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -186,10 +186,10 @@ Four layer design</text>
 <text x="19.5" y="21.508" size="0.762" layer="16" font="vector" ratio="15" rot="SMR0" align="center">v01</text>
 <wire x1="13.25" y1="22" x2="16.75" y2="22" width="0.05" layer="20" curve="180"/>
 <text x="19.05" y="-8.89" size="1.778" layer="51" font="vector" ratio="15">Priyanka Makin</text>
-<text x="19.685" y="5.842" size="0.762" layer="1" font="vector" ratio="15">1</text>
-<text x="20.32" y="5.842" size="0.762" layer="2" font="vector" ratio="15">2</text>
-<text x="19.685" y="4.953" size="0.762" layer="15" font="vector" ratio="15">3</text>
-<text x="20.701" y="4.953" size="0.762" layer="16" font="vector" ratio="15" rot="MR0">4</text>
+<text x="19.177" y="5.842" size="0.762" layer="1" font="vector" ratio="15">1</text>
+<text x="19.812" y="5.842" size="0.762" layer="2" font="vector" ratio="15">2</text>
+<text x="19.177" y="4.953" size="0.762" layer="15" font="vector" ratio="15">3</text>
+<text x="20.32" y="4.953" size="0.762" layer="16" font="vector" ratio="15" rot="MR0">4</text>
 <dimension x1="0" y1="22" x2="22" y2="22" x3="11" y3="23.622" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 <dimension x1="22" y1="22" x2="21.971" y2="0" x3="25.795659375" y3="10.994978125" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 </plain>
@@ -3504,7 +3504,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </signal>
 <signal name="GND">
 <contactref element="D1" pad="C"/>
-<polygon width="0.1016" layer="1" isolate="0.1016">
+<polygon width="0.1016" layer="1" isolate="0.1397">
 <vertex x="0" y="22"/>
 <vertex x="22" y="22"/>
 <vertex x="22" y="0.6"/>
@@ -3597,6 +3597,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <via x="17.526" y="7.62" extent="1-16" drill="0.2032"/>
 <via x="8.001" y="8.509" extent="1-16" drill="0.2032"/>
 <via x="7.874" y="17.526" extent="1-16" drill="0.2032"/>
+<via x="14.732" y="17.78" extent="1-16" drill="0.2032"/>
+<via x="19.304" y="20.701" extent="1-16" drill="0.2032"/>
+<via x="20.701" y="20.193" extent="1-16" drill="0.2032"/>
+<via x="20.32" y="17.78" extent="1-16" drill="0.2032"/>
+<via x="17.399" y="16.383" extent="1-16" drill="0.2032"/>
+<via x="1.143" y="4.318" extent="1-16" drill="0.2032"/>
+<via x="6.35" y="4.445" extent="1-16" drill="0.2032"/>
+<via x="13.716" y="4.318" extent="1-16" drill="0.2032"/>
+<via x="10.541" y="8.89" extent="1-16" drill="0.2032"/>
+<via x="17.526" y="5.969" extent="1-16" drill="0.2032"/>
+<via x="17.526" y="9.398" extent="1-16" drill="0.2032"/>
+<via x="20.701" y="6.35" extent="1-16" drill="0.2032"/>
 </signal>
 <signal name="SWDIO">
 <contactref element="U2" pad="51"/>

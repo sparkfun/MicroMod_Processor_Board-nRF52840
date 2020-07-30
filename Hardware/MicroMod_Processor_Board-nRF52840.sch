@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -21007,8 +21007,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="104.14" y1="68.58" x2="0" y2="68.58" width="0.2032" layer="97" style="longdash"/>
 <text x="56.134" y="124.206" size="2.54" layer="94" font="vector" align="center">Status LED</text>
 <text x="375.412" y="19.05" size="2.54" layer="94" font="vector" align="center">MicroMod-nRF52840-Processor-Board</text>
-<text x="358.394" y="12.446" size="2.54" layer="94" font="vector" align="center">Paul Clark</text>
-<text x="384.048" y="11.938" size="2.54" layer="94" font="vector" align="center">Priyanka Makin</text>
+<text x="361.188" y="11.938" size="2.54" layer="94" font="vector" align="center">Priyanka Makin</text>
 <text x="424.434" y="8.382" size="2.54" layer="94" font="vector" align="center">v01</text>
 <text x="53.34" y="60.96" size="2.54" layer="94" font="vector" align="center">128Mb Flash</text>
 <text x="190.5" y="147.828" size="2.54" layer="96" font="vector" align="center">Voltage Range: 1.7 to 5.5V</text>
