@@ -3510,7 +3510,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="22" y="0.6"/>
 <vertex x="0" y="0.6"/>
 </polygon>
-<polygon width="0.1016" layer="16" isolate="0.1016">
+<polygon width="0.1016" layer="16" isolate="0.1397">
 <vertex x="0" y="22"/>
 <vertex x="22" y="22"/>
 <vertex x="22" y="0.6"/>
