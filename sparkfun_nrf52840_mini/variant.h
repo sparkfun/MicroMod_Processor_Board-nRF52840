@@ -44,45 +44,48 @@ extern "C"
 
 // LEDs
 #define PIN_LED1             (7)
-#define PIN_LED2             (14)
-
 #define LED_BUILTIN          PIN_LED1
-#define LED_CONN             PIN_LED2
-
 #define LED_BLUE             PIN_LED1
-#define LED_RED              PIN_LED2
+#define LED_STATE_ON         1         // State when LED is lit
 
-#define LED_STATE_ON         1         // State when LED is litted
-
-// Buttons
 /*
-#define PIN_BUTTON1             (2)
-#define PIN_BUTTON2             (3)
-#define PIN_BUTTON3             (4)
-#define PIN_BUTTON4             (5)
-*/
+ * Digital pins
+ */
+#define PIN_D0 (27)
+#define PIN_D1 (40)
+#define PIN_G0 (47)
+#define PIN_G1 (46)
+#define PIN_G2 (45)
+#define PIN_G3 (44)
+#define PIN_G4 (43)
+#define PIN_G5 (42)
+#define PIN_G6 (38)
+#define PIN_G7 (35)
+#define PIN_PWM0 (6)
+#define PIN_PWM1 (16)
+
+static const uint8_t D0 = PIN_D0;
+static const uint8_t D1 = PIN_D1;
+static const uint8_t G0 = PIN_G0;
+static const uint8_t G1 = PIN_G1;
+static const uint8_t G2 = PIN_G2;
+static const uint8_t G3 = PIN_G3;
+static const uint8_t G4 = PIN_G4;
+static const uint8_t G5 = PIN_G5;
+static const uint8_t G6 = PIN_G6;
+static const uint8_t G7 = PIN_G7;
+static const uint8_t PWM0 = PIN_PWM0;
+static const uint8_t PWM1 = PIN_PWM1;
 
 /*
  * Analog pins
  */
-#define PIN_A0               (2)
-#define PIN_A1               (3)
-#define PIN_A2               (31)
-#define PIN_A3               (30)
-#define PIN_A4               (29)
-#define PIN_A5               (28)
-#define PIN_A6               (5)
-#define PIN_A7               (4)
+#define PIN_A0               (4)
+#define PIN_A1               (5)
 
 static const uint8_t A0  = PIN_A0 ;
 static const uint8_t A1  = PIN_A1 ;
-static const uint8_t A2  = PIN_A2 ;
-static const uint8_t A3  = PIN_A3 ;
-static const uint8_t A4  = PIN_A4 ;
-static const uint8_t A5  = PIN_A5 ;
-static const uint8_t A6  = PIN_A6 ;
-static const uint8_t A7  = PIN_A7 ;
-#define ADC_RESOLUTION    14
+#define ADC_RESOLUTION    14  //TODO: not sure this is right
 
 // Other pins
 #define PIN_AREF           (2)
@@ -107,7 +110,7 @@ static const uint8_t AREF = PIN_AREF;
 /*
  * SPI Interfaces
  */
-#define SPI_INTERFACES_COUNT 1
+#define SPI_INTERFACES_COUNT 2
 
 #define PIN_SPI_MISO         (21)
 #define PIN_SPI_MOSI         (14)
@@ -118,12 +121,22 @@ static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
 
-// //NOTE: this is actually the second SPI interface
-// #define PIN_SPI_MISO         (2)
-// #define PIN_SPI_MOSI         (31)
-// #define PIN_SPI_SCK          (28)
+//NOTE: this is actually the second SPI interface
+#define PIN_SPI1_MISO         (2)
+#define PIN_SPI1_MOSI         (31)
+#define PIN_SPI1_SCK          (28)
 
-// static const uint8_t SS   = 20 ;
+static const uint8_t SS1   = 20 ;
+static const uint8_t MOSI1 = PIN_SPI_MOSI ;
+static const uint8_t MISO1 = PIN_SPI_MISO ;
+static const uint8_t SCK1  = PIN_SPI_SCK ;
+
+// //NOTE: this is for external flash
+// #define PIN_SPI_MISO         (22)
+// #define PIN_SPI_MOSI         (21)
+// #define PIN_SPI_SCK          (19)
+
+// static const uint8_t SS   = 12 ;
 // static const uint8_t MOSI = PIN_SPI_MOSI ;
 // static const uint8_t MISO = PIN_SPI_MISO ;
 // static const uint8_t SCK  = PIN_SPI_SCK ;
@@ -131,10 +144,13 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 /*
  * Wire Interfaces
  */
-#define WIRE_INTERFACES_COUNT 1
+#define WIRE_INTERFACES_COUNT 2
 
 #define PIN_WIRE_SDA         (8) 
 #define PIN_WIRE_SCL         (11) 
+
+#define PIN_WIRE1_SDA         (33)
+#define PIN_WIRE1_SCL         (24) 
 
 /*
  * QSPI interface for external flash
