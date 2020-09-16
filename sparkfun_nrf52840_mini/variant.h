@@ -157,12 +157,18 @@ extern "C"
 /*
  * QSPI interface for external flash
  */
-#define PIN_QSPI_SCK 32
-#define PIN_QSPI_CS 33
-#define PIN_QSPI_DATA0 34
-#define PIN_QSPI_DATA1 35
-#define PIN_QSPI_DATA2 36
-#define PIN_QSPI_DATA3 37
+#define PIN_QSPI_SCK 19
+#define PIN_QSPI_CS 12
+// #define PIN_QSPI_DATA0 34
+// #define PIN_QSPI_DATA1 35
+// #define PIN_QSPI_DATA2 36
+// #define PIN_QSPI_DATA3 37
+#define PIN_QSPI_IO0 21
+#define PIN_QSPI_IO1 22
+#define PIN_QSPI_IO2 23
+#define PIN_QSPI_IO3 32
+
+#define EXTERNAL_FLASH_USE_QSPI true
 
 // On-board QSPI Flash
 // If EXTERNAL_FLASH_DEVICES is not defined, all supported devices will be used
