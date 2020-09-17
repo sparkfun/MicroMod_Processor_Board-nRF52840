@@ -48,6 +48,10 @@ extern "C"
 #define LED_BLUE PIN_LED1
 #define LED_STATE_ON 1 // State when LED is lit
 
+//Microphone
+#define PIN_PDM_DIN 26
+#define PIN_PDM_CLK 25
+#define PIN_PDM_PWR -1 //not used
 /*
  * Digital pins
  */
