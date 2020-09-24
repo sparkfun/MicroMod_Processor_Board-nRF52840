@@ -21,19 +21,19 @@ enum _AnalogReferenceMode
 /* Analog acquisition time options */
 enum _AnalogAcquisitionTime
 {
-  AT_3_US,         
-  AT_5_US,    
+  AT_3_US,
+  AT_5_US,
   AT_10_US, // Default value
   AT_15_US,
-  AT_20_US,  
-  AT_40_US  
+  AT_20_US,
+  AT_40_US
 };
 
 // Frequency of the board main oscillator
 #define VARIANT_MAINOSC (32768ul)
 
 // Master clock frequency
-#define VARIANT_MCK     (64000000ul)
+#define VARIANT_MCK (64000000ul)
 
 // Pins
 // ----
@@ -42,10 +42,10 @@ enum _AnalogAcquisitionTime
 #ifdef __cplusplus
 extern "C" unsigned int PINCOUNT_fn();
 #endif
-#define PINS_COUNT           (PINCOUNT_fn())
-#define NUM_DIGITAL_PINS     (21u)
-#define NUM_ANALOG_INPUTS    (8u)
-#define NUM_ANALOG_OUTPUTS   (0u)
+#define PINS_COUNT (PINCOUNT_fn())
+#define NUM_DIGITAL_PINS (21u)
+#define NUM_ANALOG_INPUTS (8u)
+#define NUM_ANALOG_OUTPUTS (0u)
 
 // LEDs
 // ----
@@ -56,12 +56,12 @@ extern "C" unsigned int PINCOUNT_fn();
 // #define LEDB        (24u)
 // #define LED_PWR     (25u)
 
-#define PIN_LED     (7u)
+#define PIN_LED (7u)
 #define LED_BUILTIN PIN_LED
-#define LEDR        (22u)
-#define LEDG        (23u)
-#define LEDB        (24u)
-#define LED_PWR     (25u)
+#define LEDR (22u)
+#define LEDG (23u)
+#define LEDB (24u)
+#define LED_PWR (25u)
 
 // Analog pins
 // -----------
@@ -85,12 +85,12 @@ extern "C" unsigned int PINCOUNT_fn();
 
 #define PIN_A0 (4u)
 #define PIN_A1 (5u)
-static const uint8_t A0  = PIN_A0;
-static const uint8_t A1  = PIN_A1;
+static const uint8_t A0 = PIN_A0;
+static const uint8_t A1 = PIN_A1;
 #define PIN_PWM0 (6u)
 #define PIN_PWM1 (16u)
-static const uint8_t PWM0  = PIN_PWM0;
-static const uint8_t PWM1  = PIN_PWM1;
+static const uint8_t PWM0 = PIN_PWM0;
+static const uint8_t PWM1 = PIN_PWM1;
 #define PIN_BATTVIN3 (30u)
 static const uint8_t BATTVIN3 = PIN_BATTVIN3;
 #define ADC_RESOLUTION 12
@@ -112,16 +112,16 @@ static const uint8_t BATTVIN3 = PIN_BATTVIN3;
 // #define D12  12
 // #define D13  13
 
-#define D0   27
-#define D1   40
-#define G0   47
-#define G1   46
-#define G2   45
-#define G3   44
-#define G4   43
-#define G5   42
-#define G6   38
-#define G7   36
+#define D0 27
+#define D1 40
+#define G0 47
+#define G1 46
+#define G2 45
+#define G3 44
+#define G4 43
+#define G5 42
+#define G6 38
+#define G7 36
 
 /*
  * Serial interfaces
@@ -146,15 +146,46 @@ static const uint8_t BATTVIN3 = PIN_BATTVIN3;
 // static const uint8_t MISO = PIN_SPI_MISO;
 // static const uint8_t SCK  = PIN_SPI_SCK;
 
-#define PIN_SPI_MISO  (21u)
-#define PIN_SPI_MOSI  (14u)
-#define PIN_SPI_SCK   (19u)
-#define PIN_SPI_SS    (32u)
+//MICROMOD STUFF FROM HERE ON OUT
+#define PIN_SPI_MISO (21u)
+#define PIN_SPI_MOSI (14u)
+#define PIN_SPI_SCK (19u)
+#define PIN_SPI_SS (32u)
 
-static const uint8_t SS   = PIN_SPI_SS;   // SPI Slave SS not used. Set here only for reference.
+static const uint8_t SS = PIN_SPI_SS; // SPI Slave SS not used. Set here only for reference.
 static const uint8_t MOSI = PIN_SPI_MOSI;
 static const uint8_t MISO = PIN_SPI_MISO;
-static const uint8_t SCK  = PIN_SPI_SCK;
+static const uint8_t SCK = PIN_SPI_SCK;
+
+// //NOTE: this is for external flash
+// #define PIN_SPI_MISO (22u)
+// #define PIN_SPI_MOSI (21u)
+// #define PIN_SPI_SCK (19u)
+// #define PIN_SPI_SS (12u)
+
+// static const uint8_t SS = PIN_SPI_SS;
+// static const uint8_t MOSI = PIN_SPI_MOSI;
+// static const uint8_t MISO = PIN_SPI_MISO;
+// static const uint8_t SCK = PIN_SPI_SCK;
+
+#define PIN_SPI_MISO1 (2u)
+#define PIN_SPI_MOSI1 (31u)
+#define PIN_SPI_SCK1 (28u)
+#define PIN_SPI_SS1 (20u)
+
+static const uint8_t SS1 = PIN_SPI_SS1; // SPI Slave SS not used. Set here only for reference.
+static const uint8_t MOSI1 = PIN_SPI_MOSI1;
+static const uint8_t MISO1 = PIN_SPI_MISO1;
+static const uint8_t SCK1 = PIN_SPI_SCK1;
+
+#define PIN_QSPI_SCK 19
+#define PIN_QSPI_CS 12
+#define PIN_QSPI_IO0 21
+#define PIN_QSPI_IO1 22
+#define PIN_QSPI_IO2 23
+#define PIN_QSPI_IO3 32
+
+#define EXTERNAL_FLASH_USE_QSPI true
 
 // Wire
 // #define PIN_WIRE_SDA        (18u)
@@ -167,22 +198,27 @@ static const uint8_t SCK  = PIN_SPI_SCK;
 // #define PIN_ENABLE_I2C_PULLUP      (33u)
 
 // #define PIN_INT_APDS (26u)
-#define PIN_WIRE_SDA        (8u)
-#define PIN_WIRE_SCL        (11u)
+#define PIN_WIRE_SDA (8u)
+#define PIN_WIRE_SCL (11u)
+// #define PIN_WIRE_INT (35u)
 
-#define PIN_WIRE_SDA1       (33u)
-#define PIN_WIRE_SCL1       (24u)
+#define PIN_WIRE_SDA1 (33u)
+#define PIN_WIRE_SCL1 (24u)
 
-#define PIN_ENABLE_SENSORS_3V3     (32u)
-#define PIN_ENABLE_I2C_PULLUP      (33u)
+// #define PIN_ENABLE_SENSORS_3V3 (32u) //TODO?
+// #define PIN_ENABLE_I2C_PULLUP (33u)  //TODO
 
-#define PIN_INT_APDS (26u)
+// #define PIN_INT_APDS (35u) //TODO
 
 // PDM Interfaces
 // ---------------
-#define PIN_PDM_PWR	 (27)
-#define PIN_PDM_CLK	 (28)
-#define PIN_PDM_DIN	 (29)
+// #define PIN_PDM_PWR (27)
+// #define PIN_PDM_CLK (28)
+// #define PIN_PDM_DIN (29)
+
+#define PIN_PDM_PWR (34) //TODO -- don't know what pin to put here...
+#define PIN_PDM_CLK (25)
+#define PIN_PDM_DIN (26)
 
 // These serial port names are intended to allow libraries and architecture-neutral
 // sketches to automatically default to the correct port name for a particular type
@@ -199,46 +235,49 @@ static const uint8_t SCK  = PIN_SPI_SCK;
 //
 // SERIAL_PORT_HARDWARE_OPEN  Hardware serial ports which are open for use.  Their RX & TX
 //                            pins are NOT connected to anything by default.
-#define SERIAL_PORT_USBVIRTUAL      SerialUSB
-#define SERIAL_PORT_MONITOR         SerialUSB
-#define SERIAL_PORT_HARDWARE        Serial1
-#define SERIAL_PORT_HARDWARE_OPEN   Serial1
-
+#define SERIAL_PORT_USBVIRTUAL SerialUSB
+#define SERIAL_PORT_MONITOR SerialUSB
+#define SERIAL_PORT_HARDWARE Serial1
+#define SERIAL_PORT_HARDWARE_OPEN Serial1
 
 // Mbed specific defines
 // #define SERIAL_HOWMANY		1
 // #define SERIAL1_TX			(digitalPinToPinName(PIN_SERIAL_TX))
 // #define SERIAL1_RX			(digitalPinToPinName(PIN_SERIAL_RX))
-#define SERIAL_HOWMANY		2
-#define SERIAL1_TX			(digitalPinToPinName(PIN_SERIAL_TX1))
-#define SERIAL1_RX			(digitalPinToPinName(PIN_SERIAL_RX1))
-#define SERIAL2_TX			(digitalPinToPinName(PIN_SERIAL_TX2))
-#define SERIAL2_RX			(digitalPinToPinName(PIN_SERIAL_RX2))
+#define SERIAL_HOWMANY 2
+#define SERIAL1_TX (digitalPinToPinName(PIN_SERIAL_TX1))
+#define SERIAL1_RX (digitalPinToPinName(PIN_SERIAL_RX1))
+#define SERIAL2_TX (digitalPinToPinName(PIN_SERIAL_TX2))
+#define SERIAL2_RX (digitalPinToPinName(PIN_SERIAL_RX2))
 
-#define SERIAL_CDC			1
+#define SERIAL_CDC 1
 #define HAS_UNIQUE_ISERIAL_DESCRIPTOR
-#define BOARD_VENDORID		0x2341
-#define BOARD_PRODUCTID		0x805a
-#define BOARD_NAME			"Nano 33 BLE"
+#define BOARD_VENDORID 0x2341
+#define BOARD_PRODUCTID 0x805a
+#define BOARD_NAME "Nano 33 BLE"
 
-#define DFU_MAGIC_SERIAL_ONLY_RESET   0xb0
+#define DFU_MAGIC_SERIAL_ONLY_RESET 0xb0
 
-#define WIRE_HOWMANY		2
+#define WIRE_HOWMANY 2
 
-#define I2C_SDA				(digitalPinToPinName(PIN_WIRE_SDA))
-#define I2C_SCL				(digitalPinToPinName(PIN_WIRE_SCL))
-#define I2C_SDA1			(digitalPinToPinName(PIN_WIRE_SDA1))
-#define I2C_SCL1			(digitalPinToPinName(PIN_WIRE_SCL1))
+#define I2C_SDA (digitalPinToPinName(PIN_WIRE_SDA))
+#define I2C_SCL (digitalPinToPinName(PIN_WIRE_SCL))
+#define I2C_SDA1 (digitalPinToPinName(PIN_WIRE_SDA1))
+#define I2C_SCL1 (digitalPinToPinName(PIN_WIRE_SCL1))
 
-#define SPI_HOWMANY			1
+#define SPI_HOWMANY 2
 
-#define SPI_MISO			(digitalPinToPinName(PIN_SPI_MISO))
-#define SPI_MOSI			(digitalPinToPinName(PIN_SPI_MOSI))
-#define SPI_SCK				(digitalPinToPinName(PIN_SPI_SCK))
+#define SPI_MISO (digitalPinToPinName(PIN_SPI_MISO))
+#define SPI_MOSI (digitalPinToPinName(PIN_SPI_MOSI))
+#define SPI_SCK (digitalPinToPinName(PIN_SPI_SCK))
 
-#define digitalPinToPort(P)		(digitalPinToPinName(P)/32)
+#define SPI_MISO1 (digitalPinToPinName(PIN_SPI_MISO1))
+#define SPI_MOSI1 (digitalPinToPinName(PIN_SPI_MOSI1))
+#define SPI_SCK1 (digitalPinToPinName(PIN_SPI_SCK1))
 
-uint8_t getUniqueSerialNumber(uint8_t* name);
+#define digitalPinToPort(P) (digitalPinToPinName(P) / 32)
+
+uint8_t getUniqueSerialNumber(uint8_t *name);
 void _ontouch1200bps_();
 
 #endif //__PINS_ARDUINO__
