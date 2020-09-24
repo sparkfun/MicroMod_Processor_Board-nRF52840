@@ -132,6 +132,9 @@ static const uint8_t BATTVIN3 = PIN_BATTVIN3;
 
 #define PIN_SERIAL_RX1 (17ul)
 #define PIN_SERIAL_TX1 (15ul)
+#define PIN_SERIAL_RTS1 (34ul)
+#define PIN_SERIAL_CTS1 (41ul)
+
 #define PIN_SERIAL_RX2 (37ul)
 #define PIN_SERIAL_TX2 (39ul)
 
