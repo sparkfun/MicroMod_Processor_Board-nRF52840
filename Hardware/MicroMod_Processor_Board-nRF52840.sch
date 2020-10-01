@@ -21910,26 +21910,26 @@ Diode with low voltage drop</description>
 </net>
 <net name="GPIO0-A" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="P0.03(AIN1)"/>
-<wire x1="210.82" y1="243.84" x2="213.36" y2="243.84" width="0.1524" layer="91"/>
-<label x="213.36" y="243.84" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J1" gate="J1" pin="G0/BUS0"/>
 <wire x1="76.2" y1="187.96" x2="78.74" y2="187.96" width="0.1524" layer="91"/>
 <label x="78.74" y="187.96" size="1.27" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="GPIO1-A" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.29(AIN5)"/>
 <wire x1="210.82" y1="177.8" x2="213.36" y2="177.8" width="0.1524" layer="91"/>
 <label x="213.36" y="177.8" size="1.27" layer="95" xref="yes"/>
 </segment>
+</net>
+<net name="GPIO1-A" class="0">
 <segment>
 <pinref part="J1" gate="J1" pin="G1/BUS1"/>
 <wire x1="76.2" y1="185.42" x2="78.74" y2="185.42" width="0.1524" layer="91"/>
 <label x="78.74" y="185.42" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.03(AIN1)"/>
+<wire x1="210.82" y1="243.84" x2="213.36" y2="243.84" width="0.1524" layer="91"/>
+<label x="213.36" y="243.84" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SPI_CIPO" class="0">
