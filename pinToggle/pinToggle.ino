@@ -12,7 +12,7 @@ void setup() {
   pinMode(G6, OUTPUT);
   pinMode(G7, OUTPUT);
   pinMode(LED_BUILTIN, OUTPUT);
-  pinMode(35, OUTPUT);
+  pinMode(PIN_WIRE_INT, OUTPUT);
 }
 
 void loop() {
@@ -26,7 +26,7 @@ void loop() {
   digitalWrite(G6, HIGH);
   digitalWrite(G7, HIGH);
   digitalWrite(LED_BUILTIN, HIGH);
-  digitalWrite(35, HIGH);
+  digitalWrite(PIN_WIRE_INT, HIGH);
   delay(1000);
   digitalWrite(G0, LOW);
   digitalWrite(G1, LOW);
@@ -37,6 +37,6 @@ void loop() {
   digitalWrite(G6, LOW);
   digitalWrite(G7, LOW);
   digitalWrite(LED_BUILTIN, LOW);
-  digitalWrite(35, LOW);
+  digitalWrite(PIN_WIRE_INT, LOW);
   delay(1000);
 }

@@ -22,7 +22,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -52,8 +52,8 @@
 <layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
 <layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
-<layer number="2" name="Horz" color="1" fill="3" visible="yes" active="yes"/>
-<layer number="15" name="Vert" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="2" name="Horz" color="1" fill="3" visible="no" active="yes"/>
+<layer number="15" name="Vert" color="4" fill="6" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -3173,6 +3173,37 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
+<library name="SparkFun-DiscreteSemi">
+<description>&lt;h3&gt;SparkFun Discrete Semiconductors&lt;/h3&gt;
+This library contains diodes, optoisolators, TRIACs, MOSFETs, transistors, etc. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SOD-323">
+<description>SOD-323 (Small Outline Diode)</description>
+<wire x1="-1.77" y1="0.625" x2="-1.77" y2="-0.625" width="0.2032" layer="21"/>
+<smd name="C" x="-1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
+<smd name="A" x="1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-0.9" y1="0.625" x2="0.9" y2="0.625" width="0.2032" layer="21"/>
+<wire x1="-0.9" y1="-0.625" x2="0.9" y2="-0.625" width="0.2032" layer="21"/>
+<wire x1="-1.651" y1="0.762" x2="1.651" y2="0.762" width="0.127" layer="39"/>
+<wire x1="1.651" y1="0.762" x2="1.651" y2="-0.762" width="0.127" layer="39"/>
+<wire x1="1.651" y1="-0.762" x2="-1.651" y2="-0.762" width="0.127" layer="39"/>
+<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.127" layer="39"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3445,6 +3476,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </element>
 <element name="U$2" library="buzzard_labels (79)" package="NRF528400" value="" x="16.36" y="5.58" smashed="yes" rot="MR0"/>
 <element name="U$3" library="buzzard_labels (80)" package="NRF528400" value="" x="0" y="19" smashed="yes"/>
+<element name="D2" library="SparkFun-DiscreteSemi" package="SOD-323" value="1A/23V/620mV" x="-26.67" y="-12.7" smashed="yes">
+<attribute name="NAME" x="-26.67" y="-11.938" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="DIO-11623" x="-26.67" y="-12.7" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="VALUE" x="-26.67" y="-13.462" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
 </elements>
 <signals>
 <signal name="3.3V">
@@ -3461,8 +3497,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="C4" pad="1"/>
 <contactref element="C5" pad="1"/>
 <contactref element="C6" pad="1"/>
-<contactref element="J1" pad="74"/>
-<contactref element="J1" pad="2"/>
 <contactref element="R4" pad="2"/>
 <contactref element="R5" pad="2"/>
 <polygon width="0.1016" layer="15" pour="cutout" isolate="0.3048">
@@ -3483,13 +3517,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="20.074" y1="14.859" x2="20.074" y2="15.875" width="0.1016" layer="1"/>
 <wire x1="10.93" y1="19.668" x2="10.93" y2="18.652" width="0.1016" layer="1"/>
 <wire x1="18.25" y1="14.03" x2="18.25" y2="14.83" width="0.1016" layer="1"/>
-<wire x1="20" y1="1.525" x2="20" y2="2.982" width="0.1016" layer="16"/>
-<wire x1="20" y1="2.982" x2="20.193" y2="3.175" width="0.1016" layer="16"/>
-<via x="20.193" y="3.175" extent="1-16" drill="0.2032"/>
 <via x="19.431" y="13.843" extent="1-16" drill="0.2032"/>
-<wire x1="2" y1="1.525" x2="2" y2="3.08" width="0.1016" layer="16"/>
-<wire x1="2" y1="3.08" x2="1.778" y2="3.302" width="0.1016" layer="16"/>
-<via x="1.778" y="3.302" extent="1-16" drill="0.2032"/>
 <wire x1="9.137" y1="13.993" x2="8.125" y2="13.993" width="0.1016" layer="16"/>
 <wire x1="9.225" y1="13.905" x2="9.137" y2="13.993" width="0.1016" layer="16"/>
 <wire x1="10.93" y1="18.652" x2="9.288" y2="18.652" width="0.1016" layer="1"/>
@@ -3501,6 +3529,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="8.125" y1="13.993" x2="7.516" y2="13.993" width="0.1016" layer="16"/>
 <wire x1="7.516" y1="13.993" x2="7.493" y2="13.97" width="0.1016" layer="16"/>
 <via x="7.493" y="13.97" extent="1-16" drill="0.2032"/>
+<contactref element="D2" pad="C"/>
+<contactref element="J1" pad="72"/>
+<wire x1="2.5" y1="1.525" x2="-27.82" y2="-12.7" width="0" layer="19" extent="1-16"/>
+<wire x1="7.493" y1="13.97" x2="2.5" y2="1.525" width="0" layer="19" extent="16-16"/>
+<wire x1="9.288" y1="18.652" x2="9.137" y2="13.993" width="0" layer="19" extent="1-16"/>
+<wire x1="17.653" y1="14.986" x2="10.93" y2="18.652" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="D1" pad="C"/>
@@ -3650,7 +3684,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="15.25" y1="2.571025" x2="15.25" y2="1.275" width="0.1016" layer="1"/>
 <wire x1="14.7828" y1="3.038225" x2="15.25" y2="2.571025" width="0.1016" layer="1"/>
 </signal>
-<signal name="SPI_SCK1">
+<signal name="SPI_SCK">
 <contactref element="J1" pad="57"/>
 <contactref element="U2" pad="13"/>
 <wire x1="6.25" y1="1.275" x2="6.25" y2="3.075" width="0.1016" layer="1"/>
@@ -3660,7 +3694,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="11.91110625" y1="4.445" x2="14.4024" y2="6.93629375" width="0.1016" layer="1"/>
 <wire x1="14.4024" y1="6.93629375" x2="14.4024" y2="8.6324" width="0.1016" layer="1"/>
 </signal>
-<signal name="SPI_MOSI1">
+<signal name="SPI_COPI">
 <contactref element="J1" pad="59"/>
 <contactref element="U2" pad="12"/>
 <wire x1="14.05" y1="7.78" x2="14.05" y2="6.8712625" width="0.1016" layer="1"/>
@@ -3672,8 +3706,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </signal>
 <signal name="TX1">
 <contactref element="J1" pad="17"/>
-<contactref element="U2" pad="39"/>
-<wire x1="14.85" y1="17.08" x2="14.85" y2="15.68486875" width="0.1016" layer="1"/>
 <wire x1="14.85" y1="15.68486875" x2="14.977" y2="15.55786875" width="0.1016" layer="1"/>
 <via x="14.977" y="15.55786875" extent="1-16" drill="0.2032"/>
 <wire x1="14.977" y1="15.55786875" x2="15.8242" y2="14.71066875" width="0.1016" layer="15"/>
@@ -3688,11 +3720,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="16.7132" y1="4.0132" x2="16.7132" y2="11.811" width="0.1016" layer="15"/>
 <wire x1="16.399684375" y1="12.124515625" x2="16.399684375" y2="13.351684375" width="0.1016" layer="15"/>
 <wire x1="16.7132" y1="11.811" x2="16.399684375" y2="12.124515625" width="0.1016" layer="15"/>
+<contactref element="U2" pad="60"/>
+<wire x1="14.85" y1="15.68486875" x2="11.65" y2="13.63" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RX1">
 <contactref element="J1" pad="19"/>
-<contactref element="U2" pad="41"/>
-<wire x1="14.05" y1="17.08" x2="14.05" y2="15.574" width="0.1016" layer="1"/>
 <wire x1="14.05" y1="15.574" x2="13.843" y2="15.367" width="0.1016" layer="1"/>
 <via x="13.843" y="15.367" extent="1-16" drill="0.2032"/>
 <wire x1="15.24" y1="14.859" x2="14.351" y2="14.859" width="0.1016" layer="15"/>
@@ -3708,6 +3740,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="16.129" y1="13.335" x2="16.129" y2="12.027175" width="0.1016" layer="15"/>
 <wire x1="16.129" y1="12.027175" x2="16.51" y2="11.646175" width="0.1016" layer="15"/>
 <wire x1="16.51" y1="11.646175" x2="16.51" y2="4.663825" width="0.1016" layer="15"/>
+<contactref element="U2" pad="3"/>
+<wire x1="9.25" y1="7.78" x2="15.777384375" y2="3.931209375" width="0" layer="19" extent="1-15"/>
 </signal>
 <signal name="SCL">
 <contactref element="U2" pad="27"/>
@@ -3734,7 +3768,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="17.5" y1="2.668" x2="17.5" y2="1.525" width="0.1016" layer="16"/>
 <wire x1="18.9738" y1="5.3848" x2="17.754" y2="4.165" width="0.1016" layer="16"/>
 </signal>
-<signal name="SPI_SCK">
+<signal name="SPI_SCK1">
 <contactref element="U2" pad="42"/>
 <contactref element="J1" pad="60"/>
 <contactref element="U1" pad="6"/>
@@ -3772,11 +3806,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="7.366" y1="9.398" x2="7.366" y2="9.652" width="0.1016" layer="16"/>
 <wire x1="7.366" y1="9.652" x2="7.62" y2="9.906" width="0.1016" layer="16"/>
 </signal>
-<signal name="SPI_MISO">
+<signal name="SPI_CIPO1">
 <contactref element="J1" pad="64"/>
 <contactref element="U2" pad="43"/>
-<contactref element="U1" pad="5"/>
-<wire x1="9.225" y1="10.095" x2="9.29" y2="10.16" width="0.1016" layer="16"/>
 <wire x1="9.29" y1="10.16" x2="9.652" y2="10.16" width="0.1016" layer="16"/>
 <wire x1="9.652" y1="10.16" x2="9.906" y2="10.414" width="0.1016" layer="16"/>
 <wire x1="9.906" y1="10.414" x2="9.906" y2="10.795" width="0.1016" layer="16"/>
@@ -3804,23 +3836,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="12.954" y1="16.284" x2="12.85" y2="16.18" width="0.1016" layer="1"/>
 <wire x1="13.462" y1="19.05" x2="11.9634" y2="20.5486" width="0.1016" layer="16"/>
 <wire x1="11.9634" y1="20.5486" x2="2.5146" y2="20.5486" width="0.1016" layer="16"/>
+<contactref element="U1" pad="2"/>
+<wire x1="12.827" y1="15.163965625" x2="14.775" y2="12.635" width="0" layer="19" extent="2-16"/>
 </signal>
-<signal name="SPI_MOSI">
-<contactref element="J1" pad="62"/>
-<contactref element="U2" pad="36"/>
-<wire x1="5" y1="1.525" x2="5" y2="2.62" width="0.1016" layer="16"/>
-<wire x1="5" y1="2.62" x2="1.651" y2="5.969" width="0.1016" layer="16"/>
-<wire x1="1.651" y1="19.3294" x2="2.5146" y2="20.193" width="0.1016" layer="16"/>
-<wire x1="1.651" y1="5.969" x2="1.651" y2="19.3294" width="0.1016" layer="16"/>
-<wire x1="16.002" y1="18.161" x2="15.875" y2="18.288" width="0.1016" layer="16"/>
-<wire x1="15.875" y1="18.288" x2="13.335" y2="18.288" width="0.1016" layer="16"/>
-<wire x1="13.335" y1="18.288" x2="11.43" y2="20.193" width="0.1016" layer="16"/>
-<via x="16.002" y="18.161" extent="1-16" drill="0.2032"/>
-<wire x1="16.002" y1="18.161" x2="16.05" y2="18.113" width="0.1016" layer="1"/>
-<wire x1="16.05" y1="18.113" x2="16.05" y2="16.18" width="0.1016" layer="1"/>
-<wire x1="2.5146" y1="20.193" x2="11.43" y2="20.193" width="0.1016" layer="16"/>
-</signal>
-<signal name="SPI_!CS!">
+<signal name="SPI_!CS1!">
 <contactref element="J1" pad="70"/>
 <contactref element="U2" pad="47"/>
 <contactref element="U1" pad="7"/>
@@ -3847,7 +3866,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </signal>
 <signal name="LED_BUILTIN">
 <contactref element="R1" pad="2"/>
-<contactref element="U2" pad="23"/>
 <wire x1="8.278" y1="21" x2="8.845" y2="21" width="0.1016" layer="1"/>
 <wire x1="8.845" y1="21" x2="9.525" y2="20.32" width="0.1016" layer="1"/>
 <wire x1="9.525" y1="20.32" x2="10.8712" y2="20.32" width="0.1016" layer="1"/>
@@ -3855,7 +3873,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <via x="11.43" y="20.8788" extent="1-16" drill="0.2032"/>
 <wire x1="11.43" y1="20.8788" x2="12.9286" y2="19.3802" width="0.1016" layer="15"/>
 <wire x1="12.9286" y1="19.3802" x2="13.598775" y2="19.3802" width="0.1016" layer="15"/>
-<wire x1="17.35" y1="12.03" x2="17.2116" y2="12.03" width="0.1016" layer="1"/>
 <wire x1="17.2116" y1="12.03" x2="16.764" y2="12.4776" width="0.1016" layer="1"/>
 <via x="16.764" y="12.4776" extent="1-16" drill="0.2032"/>
 <wire x1="16.8148" y1="16.164175" x2="16.8148" y2="14.640175" width="0.1016" layer="15"/>
@@ -3864,12 +3881,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="16.9672" y1="13.3158" x2="16.764" y2="13.1126" width="0.1016" layer="15"/>
 <wire x1="16.764" y1="13.1126" x2="16.764" y2="12.4776" width="0.1016" layer="15"/>
 <wire x1="13.598775" y1="19.3802" x2="16.8148" y2="16.164175" width="0.1016" layer="15"/>
+<contactref element="U2" pad="37"/>
+<wire x1="16.8148" y1="16.164175" x2="15.65" y2="17.08" width="0" layer="19" extent="1-15"/>
 </signal>
 <signal name="SDIO_DATA1">
 <contactref element="J1" pad="66"/>
 <contactref element="U2" pad="46"/>
-<contactref element="U1" pad="2"/>
-<wire x1="14.775" y1="12.635" x2="14.6398" y2="12.4998" width="0.1016" layer="16"/>
 <wire x1="14.6398" y1="12.4998" x2="14.0462" y2="12.4998" width="0.1016" layer="16"/>
 <via x="14.0462" y="12.4998" extent="1-16" drill="0.2032"/>
 <wire x1="14.0462" y1="12.4998" x2="14.0462" y2="14.03238125" width="0.1016" layer="15"/>
@@ -3922,7 +3939,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="9.906" y1="21.209" x2="2.413" y2="21.209" width="0.1016" layer="16"/>
 <wire x1="12.1412" y1="18.3388" x2="9.937190625" y2="20.542809375" width="0.1016" layer="15"/>
 </signal>
-<signal name="SPI_MISO1">
+<signal name="SPI_CIPO">
 <contactref element="J1" pad="61"/>
 <contactref element="U2" pad="11"/>
 <wire x1="5.25" y1="1.275" x2="5.25" y2="4.615" width="0.1016" layer="1"/>
@@ -3934,14 +3951,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </signal>
 <signal name="GPIO5">
 <contactref element="J1" pad="73"/>
-<contactref element="U2" pad="3"/>
 <wire x1="2.25" y1="1.275" x2="2.25" y2="4.536" width="0.1016" layer="1"/>
 <wire x1="2.25" y1="4.536" x2="3.683" y2="5.969" width="0.1016" layer="1"/>
 <wire x1="7.112" y1="5.969" x2="3.683" y2="5.969" width="0.1016" layer="1"/>
-<wire x1="9.25" y1="7.78" x2="9.25" y2="7.345" width="0.1016" layer="1"/>
 <wire x1="8.255" y1="7.112" x2="7.112" y2="5.969" width="0.1016" layer="1"/>
 <wire x1="9.25" y1="7.345" x2="9.017" y2="7.112" width="0.1016" layer="1"/>
 <wire x1="9.017" y1="7.112" x2="8.255" y2="7.112" width="0.1016" layer="1"/>
+<contactref element="U2" pad="41"/>
+<wire x1="9.25" y1="7.345" x2="14.05" y2="17.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO7">
 <contactref element="J1" pad="69"/>
@@ -4003,15 +4020,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="19.75" y1="2.799" x2="19.685" y2="2.864" width="0.1016" layer="1"/>
 <wire x1="19.685" y1="3.175" x2="19.685" y2="2.864" width="0.1016" layer="1"/>
 </signal>
-<signal name="GPIO1">
-<contactref element="J1" pad="42"/>
-<contactref element="U2" pad="7"/>
-<wire x1="12.05" y1="8.68" x2="12.05" y2="7.15786875" width="0.1016" layer="1"/>
-<via x="12.05" y="7.15786875" extent="1-16" drill="0.2032"/>
-<wire x1="12.05" y1="6.716" x2="12.05" y2="7.15786875" width="0.1016" layer="16"/>
-<wire x1="10" y1="1.525" x2="10" y2="4.666" width="0.1016" layer="16"/>
-<wire x1="10" y1="4.666" x2="12.05" y2="6.716" width="0.1016" layer="16"/>
-</signal>
 <signal name="GPIO3">
 <contactref element="J1" pad="46"/>
 <contactref element="U2" pad="5"/>
@@ -4049,18 +4057,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <via x="10.795" y="6.858" extent="1-16" drill="0.2032"/>
 <wire x1="10.795" y1="6.858" x2="10.795" y2="6.604" width="0.1016" layer="16"/>
 <wire x1="10.795" y1="6.604" x2="8.627" y2="4.436" width="0.1016" layer="16"/>
-</signal>
-<signal name="GPIO0">
-<contactref element="J1" pad="40"/>
-<contactref element="U2" pad="8"/>
-<wire x1="12.45" y1="7.78" x2="12.45" y2="6.862" width="0.1016" layer="1"/>
-<wire x1="12.45" y1="6.862" x2="12.446" y2="6.858" width="0.1016" layer="1"/>
-<via x="12.446" y="6.858" extent="1-16" drill="0.2032"/>
-<wire x1="12.446" y1="6.858" x2="12.446" y2="6.731" width="0.1016" layer="16"/>
-<wire x1="12.446" y1="6.731" x2="10.754" y2="5.039" width="0.1016" layer="16"/>
-<wire x1="10.754" y1="5.039" x2="10.754" y2="2.922" width="0.1016" layer="16"/>
-<wire x1="10.754" y1="2.922" x2="10.5" y2="2.668" width="0.1016" layer="16"/>
-<wire x1="10.5" y1="2.668" x2="10.5" y2="1.525" width="0.1016" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="R2" pad="2"/>
@@ -4178,14 +4174,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </signal>
 <signal name="!BOOT!">
 <contactref element="J1" pad="11"/>
-<contactref element="U2" pad="37"/>
 <contactref element="R4" pad="1"/>
 <wire x1="15.113" y1="18.415" x2="13.564" y2="18.415" width="0.1016" layer="1"/>
 <wire x1="11.93" y1="19.668" x2="12.311" y2="19.668" width="0.1016" layer="1"/>
 <wire x1="13.564" y1="18.415" x2="12.311" y2="19.668" width="0.1016" layer="1"/>
 <wire x1="15.113" y1="18.415" x2="15.65" y2="17.878" width="0.1016" layer="1"/>
-<wire x1="15.65" y1="17.878" x2="15.65" y2="17.08" width="0.1016" layer="1"/>
-<wire x1="15.65" y1="17.08" x2="15.65" y2="15.6174" width="0.1016" layer="1"/>
 <wire x1="15.65" y1="15.6174" x2="15.748" y2="15.5194" width="0.1016" layer="1"/>
 <via x="15.748" y="15.5194" extent="1-16" drill="0.2032"/>
 <wire x1="17.272" y1="15.6464" x2="17.145" y2="15.5194" width="0.1016" layer="2"/>
@@ -4199,11 +4192,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="18.1864" y1="6.1976" x2="18.1864" y2="3.7084" width="0.1016" layer="1"/>
 <wire x1="17.75" y1="3.272" x2="17.75" y2="1.275" width="0.1016" layer="1"/>
 <wire x1="18.1864" y1="3.7084" x2="17.75" y2="3.272" width="0.1016" layer="1"/>
+<contactref element="U2" pad="23"/>
+<wire x1="15.65" y1="15.6174" x2="15.65" y2="17.878" width="0" layer="19" extent="1-1"/>
+<wire x1="17.35" y1="12.03" x2="18.1180125" y2="15.1989875" width="0" layer="19" extent="1-15"/>
 </signal>
 <signal name="I2C_!INT!">
 <contactref element="J1" pad="16"/>
-<contactref element="U2" pad="60"/>
-<wire x1="11.65" y1="13.63" x2="16.596" y2="13.63" width="0.1016" layer="1"/>
 <wire x1="16.596" y1="13.63" x2="16.637" y2="13.589" width="0.1016" layer="1"/>
 <via x="16.637" y="13.589" extent="1-16" drill="0.2032"/>
 <wire x1="16.637" y1="13.589" x2="16.637" y2="13.208" width="0.1016" layer="16"/>
@@ -4215,6 +4209,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="16.764" y1="3.937" x2="16.764" y2="2.921" width="0.1016" layer="16"/>
 <wire x1="16.5" y1="2.657" x2="16.5" y2="1.525" width="0.1016" layer="16"/>
 <wire x1="16.764" y1="2.921" x2="16.5" y2="2.657" width="0.1016" layer="16"/>
+<contactref element="U2" pad="39"/>
+<wire x1="16.596" y1="13.63" x2="14.85" y2="17.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PDM_DATA">
 <contactref element="J1" pad="52"/>
@@ -4390,26 +4386,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="8.028921875" y1="5.814078125" x2="8.001" y2="5.78615625" width="0.1016" layer="15"/>
 <wire x1="8.001" y1="5.78615625" x2="8.001" y2="3.556" width="0.1016" layer="15"/>
 </signal>
-<signal name="ADC_D-">
-<contactref element="J1" pad="65"/>
+<signal name="GPIO0-A">
 <contactref element="U2" pad="9"/>
-<wire x1="4.25" y1="1.275" x2="4.25" y2="4.377" width="0.1016" layer="1"/>
 <wire x1="12.8024" y1="8.6324" x2="12.85" y2="8.68" width="0.1016" layer="1"/>
 <wire x1="11.566775" y1="5.2578" x2="12.8024" y2="6.493425" width="0.1016" layer="1"/>
 <wire x1="12.8024" y1="6.493425" x2="12.8024" y2="8.6324" width="0.1016" layer="1"/>
 <wire x1="5.1308" y1="5.2578" x2="11.566775" y2="5.2578" width="0.1016" layer="1"/>
 <wire x1="4.25" y1="4.377" x2="5.1308" y2="5.2578" width="0.1016" layer="1"/>
+<contactref element="J1" pad="40"/>
+<wire x1="11.566775" y1="5.2578" x2="10.5" y2="1.525" width="0" layer="19" extent="1-16"/>
 </signal>
-<signal name="ADC_D+">
-<contactref element="J1" pad="63"/>
+<signal name="GPIO1-A">
 <contactref element="U2" pad="10"/>
-<wire x1="4.75" y1="1.275" x2="4.75" y2="4.4706" width="0.1016" layer="1"/>
 <wire x1="4.75" y1="4.4706" x2="5.334" y2="5.0546" width="0.1016" layer="1"/>
 <wire x1="5.334" y1="5.0546" x2="11.65094375" y2="5.0546" width="0.1016" layer="1"/>
 <wire x1="13.20034375" y1="6.604" x2="13.208" y2="6.604" width="0.1016" layer="1"/>
 <wire x1="11.65094375" y1="5.0546" x2="13.20034375" y2="6.604" width="0.1016" layer="1"/>
 <wire x1="13.208" y1="6.604" x2="13.25" y2="6.646" width="0.1016" layer="1"/>
 <wire x1="13.25" y1="6.646" x2="13.25" y2="7.78" width="0.1016" layer="1"/>
+<contactref element="J1" pad="42"/>
+<wire x1="11.65094375" y1="5.0546" x2="10" y2="1.525" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CTS1">
 <contactref element="J1" pad="15"/>
@@ -4450,7 +4446,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="9.65" y1="15.38058125" x2="9.65" y2="16.18" width="0.1016" layer="1"/>
 <wire x1="17.145" y1="14.986" x2="13.598940625" y2="14.986" width="0.1016" layer="2"/>
 </signal>
-<signal name="SPI_!CS!1">
+<signal name="SPI_!CS!">
 <contactref element="J1" pad="55"/>
 <contactref element="U2" pad="44"/>
 <wire x1="6.75" y1="1.275" x2="6.75" y2="2.902" width="0.1016" layer="1"/>
@@ -4514,6 +4510,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <via x="18.3302" y="3.302" extent="1-16" drill="0.2032"/>
 <wire x1="18.25" y1="1.275" x2="18.25" y2="3.2218" width="0.1016" layer="1"/>
 <wire x1="18.25" y1="3.2218" x2="18.3302" y2="3.302" width="0.1016" layer="1"/>
+</signal>
+<signal name="SPI_COPI1">
+<contactref element="J1" pad="62"/>
+<contactref element="U1" pad="5"/>
+<contactref element="U2" pad="36"/>
+<wire x1="9.225" y1="10.095" x2="16.05" y2="16.18" width="0" layer="19" extent="1-16"/>
+<wire x1="5" y1="1.525" x2="9.225" y2="10.095" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$5">
+<contactref element="J1" pad="2"/>
+<contactref element="J1" pad="74"/>
+<contactref element="D2" pad="A"/>
+<wire x1="2" y1="1.525" x2="-25.52" y2="-12.7" width="0" layer="19" extent="1-16"/>
+<wire x1="20" y1="1.525" x2="2" y2="1.525" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="3.3V_EN">
+<contactref element="J1" pad="4"/>
+<contactref element="U2" pad="8"/>
+<wire x1="12.45" y1="7.78" x2="19.5" y2="1.525" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="GPIO8">
+<contactref element="J1" pad="67"/>
+<contactref element="U2" pad="7"/>
+<wire x1="3.75" y1="1.275" x2="12.05" y2="8.68" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
