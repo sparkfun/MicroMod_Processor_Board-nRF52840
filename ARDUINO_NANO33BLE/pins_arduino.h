@@ -116,7 +116,7 @@ static const uint8_t BATTVIN3 = PIN_BATTVIN3;
 #define G2 45
 #define G3 44
 #define G4 43
-#define G5 42
+#define G5 17
 #define G6 38
 #define G7 36
 
@@ -127,11 +127,8 @@ static const uint8_t BATTVIN3 = PIN_BATTVIN3;
 // #define PIN_SERIAL_RX (1ul)
 // #define PIN_SERIAL_TX (0ul)
 
-#define PIN_SERIAL_RX (17ul)
-#define PIN_SERIAL_TX (15ul)
-
-#define PIN_SERIAL_RX1 (17ul)
-#define PIN_SERIAL_TX1 (15ul)
+#define PIN_SERIAL_RX1 (42ul)
+#define PIN_SERIAL_TX1 (35ul)
 #define PIN_SERIAL_RTS1 (34ul)
 #define PIN_SERIAL_CTS1 (41ul)
 
@@ -204,7 +201,7 @@ static const uint8_t SCK1 = PIN_SPI_SCK1;
 
 #define PIN_WIRE_SDA (8u)
 #define PIN_WIRE_SCL (11u)
-// #define PIN_WIRE_INT (35u)
+#define PIN_WIRE_INT (15u)
 
 #define PIN_WIRE_SDA1 (33u)
 #define PIN_WIRE_SCL1 (24u)
