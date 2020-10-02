@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -21288,6 +21288,7 @@ Diode with low voltage drop</description>
 <text x="53.34" y="60.96" size="2.54" layer="94" font="vector" align="center">128Mb Flash</text>
 <text x="190.5" y="147.828" size="2.54" layer="96" font="vector" align="center">Voltage Range: 1.7 to 5.5V</text>
 <text x="190.754" y="268.986" size="2.54" layer="94" font="vector" align="center">nRF52840</text>
+<text x="17.78" y="264.16" size="1.778" layer="97">3V logic level</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -21707,7 +21708,7 @@ Diode with low voltage drop</description>
 <label x="213.36" y="187.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="SPI_SCK1" class="0">
+<net name="SPI_SCK1/SDIO_CLK" class="0">
 <segment>
 <wire x1="76.2" y1="254" x2="78.74" y2="254" width="0.1524" layer="91"/>
 <label x="78.74" y="254" size="1.27" layer="95" xref="yes"/>
@@ -21724,7 +21725,7 @@ Diode with low voltage drop</description>
 <label x="60.96" y="38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="SPI_CIPO1" class="0">
+<net name="SPI_CIPO1/SDIO_DATA0" class="0">
 <segment>
 <wire x1="76.2" y1="248.92" x2="78.74" y2="248.92" width="0.1524" layer="91"/>
 <label x="78.74" y="248.92" size="1.27" layer="95" xref="yes"/>
@@ -21741,7 +21742,7 @@ Diode with low voltage drop</description>
 <label x="60.96" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="SPI_!CS1!" class="0">
+<net name="SPI_!CS1!/SDIO_DATA3" class="0">
 <segment>
 <wire x1="76.2" y1="241.3" x2="78.74" y2="241.3" width="0.1524" layer="91"/>
 <label x="78.74" y="241.3" size="1.27" layer="95" xref="yes"/>
@@ -21908,7 +21909,7 @@ Diode with low voltage drop</description>
 <label x="60.96" y="30.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO0-A" class="0">
+<net name="GPIO0/ADC2" class="0">
 <segment>
 <pinref part="J1" gate="J1" pin="G0/BUS0"/>
 <wire x1="76.2" y1="187.96" x2="78.74" y2="187.96" width="0.1524" layer="91"/>
@@ -21920,7 +21921,7 @@ Diode with low voltage drop</description>
 <label x="213.36" y="177.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1-A" class="0">
+<net name="GPIO1/ADC3" class="0">
 <segment>
 <pinref part="J1" gate="J1" pin="G1/BUS1"/>
 <wire x1="76.2" y1="185.42" x2="78.74" y2="185.42" width="0.1524" layer="91"/>
@@ -22109,28 +22110,28 @@ Diode with low voltage drop</description>
 <junction x="241.3" y="251.46"/>
 </segment>
 </net>
-<net name="NFC1" class="0">
+<net name="GPIO9/NFC1" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.09(NFC1)"/>
 <wire x1="210.82" y1="228.6" x2="213.36" y2="228.6" width="0.1524" layer="91"/>
 <label x="213.36" y="228.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="30.48" y1="218.44" x2="27.94" y2="218.44" width="0.1524" layer="91"/>
-<label x="27.94" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="J1" pin="CAN-TX"/>
+<pinref part="J1" gate="J1" pin="G9/ADC_D-/CAM_HSYNC"/>
+<wire x1="76.2" y1="165.1" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
+<label x="78.74" y="165.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="NFC2" class="0">
+<net name="GPIO10/NFC2" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.10(NFC2)"/>
 <wire x1="210.82" y1="226.06" x2="213.36" y2="226.06" width="0.1524" layer="91"/>
 <label x="213.36" y="226.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="30.48" y1="215.9" x2="27.94" y2="215.9" width="0.1524" layer="91"/>
-<label x="27.94" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="J1" pin="CAN-RX"/>
+<pinref part="J1" gate="J1" pin="G10/ADC_D+/CAM_VSYNC"/>
+<wire x1="76.2" y1="162.56" x2="78.74" y2="162.56" width="0.1524" layer="91"/>
+<label x="78.74" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RX2" class="0">
@@ -22196,7 +22197,7 @@ Diode with low voltage drop</description>
 <pinref part="SUPPLY10" gate="G$1" pin="V_USB"/>
 </segment>
 </net>
-<net name="SPI_COPI1" class="0">
+<net name="SPI_COPI1/SDIO_CMD" class="0">
 <segment>
 <wire x1="76.2" y1="251.46" x2="78.74" y2="251.46" width="0.1524" layer="91"/>
 <label x="78.74" y="251.46" size="1.27" layer="95" xref="yes"/>
