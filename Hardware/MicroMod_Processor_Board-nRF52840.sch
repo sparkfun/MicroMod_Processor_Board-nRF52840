@@ -21288,7 +21288,7 @@ Diode with low voltage drop</description>
 <text x="53.34" y="60.96" size="2.54" layer="94" font="vector" align="center">128Mb Flash</text>
 <text x="190.5" y="147.828" size="2.54" layer="96" font="vector" align="center">Voltage Range: 1.7 to 5.5V</text>
 <text x="190.754" y="268.986" size="2.54" layer="94" font="vector" align="center">nRF52840</text>
-<text x="17.78" y="264.16" size="1.778" layer="97">3V logic level</text>
+<text x="17.78" y="264.16" size="1.778" layer="97" font="vector">3V logic level</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
