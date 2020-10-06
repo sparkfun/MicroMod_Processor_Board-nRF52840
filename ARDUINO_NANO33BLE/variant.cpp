@@ -212,8 +212,8 @@ extern "C"
 void initVariant()
 {
   // turn power LED on
-  pinMode(LED_PWR, OUTPUT);
-  digitalWrite(LED_PWR, HIGH);
+  // pinMode(LED_PWR, OUTPUT);
+  // digitalWrite(LED_PWR, HIGH);
 
   // Errata Nano33BLE - I2C pullup is on SWO line, need to disable TRACE
   // was being enabled by nrfx_clock_anomaly_132
