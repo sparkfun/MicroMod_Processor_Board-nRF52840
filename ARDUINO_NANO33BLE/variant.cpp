@@ -181,22 +181,22 @@ PinDescription g_APinDescription[] = {
     {P0_29, NULL, NULL, NULL}, //ADC_D+ -- this isn't supported by nRF. Will change
     {P0_30, NULL, NULL, NULL}, //BATT_VIN/3
     {P0_31, NULL, NULL, NULL}, //MOSI1
-    {P1_0, NULL, NULL, NULL},  //32 - !CS!
-    {P1_1, NULL, NULL, NULL},  //33 - SDA1
-    {P1_2, NULL, NULL, NULL},  //34 - RTS1
-    {P1_3, NULL, NULL, NULL},  //35 - I2C_!INT!
-    {P1_4, NULL, NULL, NULL},  //36 - G7
-    {P1_5, NULL, NULL, NULL},  //37 - RX2
-    {P1_6, NULL, NULL, NULL},  //38 - G6
-    {P1_7, NULL, NULL, NULL},  //39 - TX2
-    {P1_8, NULL, NULL, NULL},  //40 - D1
-    {P1_9, NULL, NULL, NULL},  //41 - CTS1
-    {P1_10, NULL, NULL, NULL}, //42 - G5
-    {P1_11, NULL, NULL, NULL}, //43 - G4
-    {P1_12, NULL, NULL, NULL}, //44 - G3
-    {P1_13, NULL, NULL, NULL}, //45 - G2
-    {P1_14, NULL, NULL, NULL}, //46 - G1
-    {P1_15, NULL, NULL, NULL}  //47 - G0
+    {P1_0, NULL, NULL, NULL},  //!CS!
+    {P1_1, NULL, NULL, NULL},  //SDA1
+    {P1_2, NULL, NULL, NULL},  //RTS1
+    {P1_3, NULL, NULL, NULL},  //I2C_!INT!
+    {P1_4, NULL, NULL, NULL},  //G7
+    {P1_5, NULL, NULL, NULL},  //RX2
+    {P1_6, NULL, NULL, NULL},  //G6
+    {P1_7, NULL, NULL, NULL},  //TX2
+    {P1_8, NULL, NULL, NULL},  //D1
+    {P1_9, NULL, NULL, NULL},  //CTS1
+    {P1_10, NULL, NULL, NULL}, //G5
+    {P1_11, NULL, NULL, NULL}, //G4
+    {P1_12, NULL, NULL, NULL}, //G3
+    {P1_13, NULL, NULL, NULL}, //G2
+    {P1_14, NULL, NULL, NULL}, //G1
+    {P1_15, NULL, NULL, NULL}  //G0
 };
 
 extern "C"
@@ -212,8 +212,8 @@ extern "C"
 void initVariant()
 {
   // turn power LED on
-  // pinMode(LED_PWR, OUTPUT);
-  // digitalWrite(LED_PWR, HIGH);
+  pinMode(LED_PWR, OUTPUT);
+  digitalWrite(LED_PWR, HIGH);
 
   // Errata Nano33BLE - I2C pullup is on SWO line, need to disable TRACE
   // was being enabled by nrfx_clock_anomaly_132
