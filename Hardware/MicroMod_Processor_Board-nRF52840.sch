@@ -21245,8 +21245,12 @@ Diode with low voltage drop</description>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U2" library="SparkFun-RF" deviceset="MDBT50Q" device=""/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R2" library="SparkFun-Resistors" deviceset="27OHM" device="" value="27OHM"/>
-<part name="R3" library="SparkFun-Resistors" deviceset="27OHM" device="" value="27OHM"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="27OHM" device="" value="27OHM">
+<attribute name="PROD_ID" value="RES-15238"/>
+</part>
+<part name="R3" library="SparkFun-Resistors" deviceset="27OHM" device="" value="27OHM">
+<attribute name="PROD_ID" value="RES-15238"/>
+</part>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="Y1" library="SparkFun-Clocks" deviceset="CRYSTAL-32.768KHZ" device="SMD-3.2X1.5" value="32.768kHz"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="15PF" device="-0402T-50V-5%" value="15pF"/>
@@ -21347,10 +21351,12 @@ Diode with low voltage drop</description>
 <instance part="R2" gate="G$1" x="157.48" y="238.76" smashed="yes">
 <attribute name="NAME" x="152.4" y="240.284" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="162.56" y="242.316" size="1.778" layer="96" font="vector" align="top-center"/>
+<attribute name="PROD_ID" x="157.48" y="238.76" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="R3" gate="G$1" x="157.48" y="236.22" smashed="yes">
 <attribute name="NAME" x="152.4" y="232.664" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="162.56" y="234.696" size="1.778" layer="96" font="vector" align="top-center"/>
+<attribute name="PROD_ID" x="157.48" y="236.22" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY3" gate="G$1" x="162.56" y="256.54" smashed="yes">
 <attribute name="VALUE" x="162.56" y="259.334" size="1.778" layer="96" align="bottom-center"/>
