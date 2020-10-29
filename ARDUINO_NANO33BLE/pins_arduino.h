@@ -49,14 +49,7 @@ extern "C" unsigned int PINCOUNT_fn();
 
 // LEDs
 // ----
-// #define PIN_LED     (13u)
-// #define LED_BUILTIN PIN_LED
-// #define LEDR        (22u)
-// #define LEDG        (23u)
-// #define LEDB        (24u)
-// #define LED_PWR     (25u)
-
-#define PIN_LED (7u)
+#define PIN_LED (13u)
 #define LED_BUILTIN PIN_LED
 
 // Analog pins
@@ -81,8 +74,20 @@ extern "C" unsigned int PINCOUNT_fn();
 
 #define PIN_A0 (4u)
 #define PIN_A1 (5u)
+#define PIN_A2 (29u)
+#define PIN_A3 (3u)
+#define PIN_A4 (2u)
+#define PIN_A5 (28u)
+#define PIN_A6 (30u)
+#define PIN_A7 (31u)
 static const uint8_t A0 = PIN_A0;
 static const uint8_t A1 = PIN_A1;
+static const uint8_t A2 = PIN_A2;
+static const uint8_t A3 = PIN_A3;
+static const uint8_t A4 = PIN_A4;
+static const uint8_t A5 = PIN_A5;
+static const uint8_t A6 = PIN_A6;
+static const uint8_t A7 = PIN_A7;
 #define PIN_PWM0 (6u)
 #define PIN_PWM1 (16u)
 static const uint8_t PWM0 = PIN_PWM0;
@@ -93,41 +98,27 @@ static const uint8_t BATTVIN3 = PIN_BATTVIN3;
 
 // Digital pins
 // -----------
-// #define D0   0
-// #define D1   1
-// #define D2   2
-// #define D3   3
-// #define D4   4
-// #define D5   5
-// #define D6   6
-// #define D7   7
-// #define D8   8
-// #define D9   9
-// #define D10  10
-// #define D11  11
-// #define D12  12
-// #define D13  13
-
 #define D0 27
 #define D1 40
-#define G0 47
-#define G1 46
+#define G0 29
+#define G1 3
 #define G2 45
 #define G3 44
 #define G4 43
 #define G5 17
 #define G6 38
 #define G7 36
+#define G8 46
+#define G9 9
+#define G10 10
 
 /*
  * Serial interfaces
  */
 // Serial (EDBG)
-// #define PIN_SERIAL_RX (1ul)
-// #define PIN_SERIAL_TX (0ul)
-
 #define PIN_SERIAL_RX1 (42ul)
 #define PIN_SERIAL_TX1 (35ul)
+//For serial flow control, uncomment lines 225 and 226
 #define PIN_SERIAL_RTS1 (34ul)
 #define PIN_SERIAL_CTS1 (41ul)
 
@@ -135,30 +126,19 @@ static const uint8_t BATTVIN3 = PIN_BATTVIN3;
 #define PIN_SERIAL_TX2 (39ul)
 
 // SPI
-// #define PIN_SPI_MISO  (12u)
-// #define PIN_SPI_MOSI  (11u)
-// #define PIN_SPI_SCK   (13u)
-// #define PIN_SPI_SS    (10u)
+#define PIN_SPI_MISO (2u)
+#define PIN_SPI_MOSI (31u)
+#define PIN_SPI_SCK (28u)
+#define PIN_SPI_SS (20u)
 
-// static const uint8_t SS   = PIN_SPI_SS;   // SPI Slave SS not used. Set here only for reference.
-// static const uint8_t MOSI = PIN_SPI_MOSI;
-// static const uint8_t MISO = PIN_SPI_MISO;
-// static const uint8_t SCK  = PIN_SPI_SCK;
-
-//MICROMOD STUFF FROM HERE ON OUT
-#define PIN_SPI_MISO (21u)
-#define PIN_SPI_MOSI (14u)
-#define PIN_SPI_SCK (19u)
-#define PIN_SPI_SS (32u)
-
-static const uint8_t SS = PIN_SPI_SS; // SPI Slave SS not used. Set here only for reference.
+static const uint8_t SS = PIN_SPI_SS;
 static const uint8_t MOSI = PIN_SPI_MOSI;
 static const uint8_t MISO = PIN_SPI_MISO;
 static const uint8_t SCK = PIN_SPI_SCK;
 
 // //NOTE: this is for external flash
-// #define PIN_SPI_MISO (22u)
-// #define PIN_SPI_MOSI (21u)
+// #define PIN_SPI_MISO (21u)
+// #define PIN_SPI_MOSI (14u)
 // #define PIN_SPI_SCK (19u)
 // #define PIN_SPI_SS (12u)
 
@@ -167,24 +147,22 @@ static const uint8_t SCK = PIN_SPI_SCK;
 // static const uint8_t MISO = PIN_SPI_MISO;
 // static const uint8_t SCK = PIN_SPI_SCK;
 
-#define PIN_SPI_MISO1 (2u)
-#define PIN_SPI_MOSI1 (31u)
-#define PIN_SPI_SCK1 (28u)
-#define PIN_SPI_SS1 (20u)
+#define PIN_SPI_MISO1 (21u)
+#define PIN_SPI_MOSI1 (14u)
+#define PIN_SPI_SCK1 (19u)
+#define PIN_SPI_SS1 (32u)
 
-static const uint8_t SS1 = PIN_SPI_SS1; // SPI Slave SS not used. Set here only for reference.
+static const uint8_t SS1 = PIN_SPI_SS1;
 static const uint8_t MOSI1 = PIN_SPI_MOSI1;
 static const uint8_t MISO1 = PIN_SPI_MISO1;
 static const uint8_t SCK1 = PIN_SPI_SCK1;
 
 #define PIN_QSPI_SCK 19
-#define PIN_QSPI_CS 12
+#define PIN_QSPI_CS 14
 #define PIN_QSPI_IO0 21
 #define PIN_QSPI_IO1 22
 #define PIN_QSPI_IO2 23
 #define PIN_QSPI_IO3 32
-
-#define EXTERNAL_FLASH_USE_QSPI true
 
 // Wire
 // #define PIN_WIRE_SDA        (18u)
@@ -240,14 +218,12 @@ static const uint8_t SCK1 = PIN_SPI_SCK1;
 #define SERIAL_PORT_HARDWARE_OPEN Serial1
 
 // Mbed specific defines
-// #define SERIAL_HOWMANY		1
-// #define SERIAL1_TX			(digitalPinToPinName(PIN_SERIAL_TX))
-// #define SERIAL1_RX			(digitalPinToPinName(PIN_SERIAL_RX))
 #define SERIAL_HOWMANY 2
 #define SERIAL1_TX (digitalPinToPinName(PIN_SERIAL_TX1))
 #define SERIAL1_RX (digitalPinToPinName(PIN_SERIAL_RX1))
-#define SERIAL1_RTS (digitalPinToPinName(PIN_SERIAL_RTS1))
-#define SERIAL1_CTS (digitalPinToPinName(PIN_SERIAL_CTS1))
+//Uncomment the following two lines if you want to implement serial flow control
+// #define SERIAL1_RTS (digitalPinToPinName(PIN_SERIAL_RTS1))
+// #define SERIAL1_CTS (digitalPinToPinName(PIN_SERIAL_CTS1))
 #define SERIAL2_TX (digitalPinToPinName(PIN_SERIAL_TX2))
 #define SERIAL2_RX (digitalPinToPinName(PIN_SERIAL_RX2))
 
