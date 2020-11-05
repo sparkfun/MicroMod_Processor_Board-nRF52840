@@ -28,9 +28,9 @@ void loop()
   Serial.print("A2 voltage: ");
   Serial.print(myVoltage0, 3);
 //
-  int myAnalog1 = analogRead(A3); //DOES NOT work
+//  int myAnalog1 = analogRead(A3); //DOES NOT work
 //  int myAnalog1 = analogRead(A4); //DOES NOT work
-//  int myAnalog1 = analogRead(A5); //Works
+  int myAnalog1 = analogRead(A5); //Works
 //  int myAnalog1 = analogRead(A6); //Works
 //  int myAnalog1 = analogRead(A7); //Works
 

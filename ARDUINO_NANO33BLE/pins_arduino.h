@@ -43,9 +43,9 @@ enum _AnalogAcquisitionTime
 extern "C" unsigned int PINCOUNT_fn();
 #endif
 #define PINS_COUNT (PINCOUNT_fn())
-// #define NUM_DIGITAL_PINS (21u)
+#define NUM_DIGITAL_PINS (48u)
 #define NUM_ANALOG_INPUTS (8u)
-// #define NUM_ANALOG_OUTPUTS (0u)
+#define NUM_ANALOG_OUTPUTS (0u)
 
 // LEDs
 // ----
