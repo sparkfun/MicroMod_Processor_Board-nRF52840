@@ -54,40 +54,18 @@ extern "C" unsigned int PINCOUNT_fn();
 
 // Analog pins
 // -----------
-// #define PIN_A0 (14u)
-// #define PIN_A1 (15u)
-// #define PIN_A2 (16u)
-// #define PIN_A3 (17u)
-// #define PIN_A4 (18u)
-// #define PIN_A5 (19u)
-// #define PIN_A6 (20u)
-// #define PIN_A7 (21u)
-// static const uint8_t A0  = PIN_A0;
-// static const uint8_t A1  = PIN_A1;
-// static const uint8_t A2  = PIN_A2;
-// static const uint8_t A3  = PIN_A3;
-// static const uint8_t A4  = PIN_A4;
-// static const uint8_t A5  = PIN_A5;
-// static const uint8_t A6  = PIN_A6;
-// static const uint8_t A7  = PIN_A7;
-// #define ADC_RESOLUTION 12
-
 #define PIN_A0 (4u)
 #define PIN_A1 (5u)
 #define PIN_A2 (29u)
-#define PIN_A3 (3u)
-#define PIN_A4 (2u)
-#define PIN_A5 (28u)
-#define PIN_A6 (30u)
-#define PIN_A7 (31u)
+#define PIN_A3 (28u)
+#define PIN_A4 (30u)
+#define PIN_A5 (31u)
 static const uint8_t A0 = PIN_A0;
 static const uint8_t A1 = PIN_A1;
 static const uint8_t A2 = PIN_A2;
 static const uint8_t A3 = PIN_A3;
 static const uint8_t A4 = PIN_A4;
 static const uint8_t A5 = PIN_A5;
-static const uint8_t A6 = PIN_A6;
-static const uint8_t A7 = PIN_A7;
 #define PIN_PWM0 (6u)
 #define PIN_PWM1 (16u)
 static const uint8_t PWM0 = PIN_PWM0;
@@ -136,7 +114,7 @@ static const uint8_t MOSI = PIN_SPI_MOSI;
 static const uint8_t MISO = PIN_SPI_MISO;
 static const uint8_t SCK = PIN_SPI_SCK;
 
-// //NOTE: this is for external flash
+// //NOTE: this is for onboard flash IC
 // #define PIN_SPI_MISO (21u)
 // #define PIN_SPI_MOSI (14u)
 // #define PIN_SPI_SCK (19u)

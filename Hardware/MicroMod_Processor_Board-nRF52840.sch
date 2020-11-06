@@ -21915,7 +21915,7 @@ Diode with low voltage drop</description>
 <label x="60.96" y="30.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO0/ADC2" class="0">
+<net name="GPIO0" class="0">
 <segment>
 <pinref part="J1" gate="J1" pin="G0/BUS0"/>
 <wire x1="76.2" y1="187.96" x2="78.74" y2="187.96" width="0.1524" layer="91"/>
@@ -21927,7 +21927,7 @@ Diode with low voltage drop</description>
 <label x="213.36" y="177.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1/ADC3" class="0">
+<net name="GPIO1" class="0">
 <segment>
 <pinref part="J1" gate="J1" pin="G1/BUS1"/>
 <wire x1="76.2" y1="185.42" x2="78.74" y2="185.42" width="0.1524" layer="91"/>

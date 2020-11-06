@@ -4239,7 +4239,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="8.028921875" y1="5.814078125" x2="8.001" y2="5.78615625" width="0.1016" layer="15"/>
 <wire x1="8.001" y1="5.78615625" x2="8.001" y2="3.302" width="0.1016" layer="15"/>
 </signal>
-<signal name="GPIO0/ADC2">
+<signal name="GPIO0">
 <contactref element="J1" pad="40"/>
 <contactref element="U2" pad="10"/>
 <wire x1="13.25" y1="7.78" x2="13.25" y2="7.027" width="0.1016" layer="1"/>
@@ -4250,7 +4250,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="10.668" y1="4.445" x2="10.668" y2="2.794" width="0.1016" layer="16"/>
 <wire x1="10.668" y1="2.794" x2="10.5" y2="2.626" width="0.1016" layer="16"/>
 </signal>
-<signal name="GPIO1/ADC3">
+<signal name="GPIO1">
 <contactref element="J1" pad="42"/>
 <contactref element="U2" pad="9"/>
 <wire x1="12.85" y1="8.68" x2="12.85" y2="7.135" width="0.1016" layer="1"/>

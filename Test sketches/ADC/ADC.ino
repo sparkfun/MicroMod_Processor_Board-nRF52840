@@ -27,12 +27,10 @@ void loop()
   float myVoltage0 = myAnalog0 * ANALOG_REFERENCE / maxADCValue;
   Serial.print("A2 voltage: ");
   Serial.print(myVoltage0, 3);
-//
+
 //  int myAnalog1 = analogRead(A3); //DOES NOT work
 //  int myAnalog1 = analogRead(A4); //DOES NOT work
   int myAnalog1 = analogRead(A5); //Works
-//  int myAnalog1 = analogRead(A6); //Works
-//  int myAnalog1 = analogRead(A7); //Works
 
   float myVoltage1 = myAnalog1 * ANALOG_REFERENCE / maxADCValue;
   Serial.print("\tA3 voltage: ");

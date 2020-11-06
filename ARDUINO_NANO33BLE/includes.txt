@@ -53,20 +53,12 @@
 -iwithprefixbefore/mbed/rtos/source
 -iwithprefixbefore/mbed/rtos
 -iwithprefixbefore/mbed/platform/source/minimal-printf
--iwithprefixbefore/mbed/platform/source/TARGET_CORTEX_M
 -iwithprefixbefore/mbed/platform/source
 -iwithprefixbefore/mbed/platform/internal
 -iwithprefixbefore/mbed/platform/cxxsupport
 -iwithprefixbefore/mbed/platform
 -iwithprefixbefore/mbed/hal/usb
--iwithprefixbefore/mbed/hal/storage_abstraction
 -iwithprefixbefore/mbed/hal
--iwithprefixbefore/mbed/features/unsupported/dsp/dsp
--iwithprefixbefore/mbed/features/unsupported/dsp/cmsis_dsp
--iwithprefixbefore/mbed/features/unsupported/dsp/
--iwithprefixbefore/mbed/features/storage/system_storage
--iwithprefixbefore/mbed/features/storage/nvstore/source
--iwithprefixbefore/mbed/features/storage/nvstore
 -iwithprefixbefore/mbed/features/storage/kvstore/tdbstore
 -iwithprefixbefore/mbed/features/storage/kvstore/securestore
 -iwithprefixbefore/mbed/features/storage/kvstore/kv_map
@@ -76,6 +68,8 @@
 -iwithprefixbefore/mbed/features/storage/kvstore/direct_access_devicekey
 -iwithprefixbefore/mbed/features/storage/kvstore/conf
 -iwithprefixbefore/mbed/features/storage/kvstore
+-iwithprefixbefore/mbed/features/storage/filesystem/littlefsv2/littlefs
+-iwithprefixbefore/mbed/features/storage/filesystem/littlefsv2
 -iwithprefixbefore/mbed/features/storage/filesystem/littlefs/littlefs
 -iwithprefixbefore/mbed/features/storage/filesystem/littlefs
 -iwithprefixbefore/mbed/features/storage/filesystem/fat/ChaN
@@ -102,7 +96,6 @@
 -iwithprefixbefore/mbed/features/netsocket/ppp/include/polarssl
 -iwithprefixbefore/mbed/features/netsocket/ppp/include
 -iwithprefixbefore/mbed/features/netsocket/ppp
--iwithprefixbefore/mbed/features/netsocket/cellular
 -iwithprefixbefore/mbed/features/netsocket
 -iwithprefixbefore/mbed/features/nanostack/sal-stack-nanostack/source/libNET/src
 -iwithprefixbefore/mbed/features/nanostack/sal-stack-nanostack/source/libNET
@@ -195,10 +188,7 @@
 -iwithprefixbefore/mbed/features/nanostack/coap-service
 -iwithprefixbefore/mbed/features/nanostack
 -iwithprefixbefore/mbed/features/mbedtls/platform/inc
--iwithprefixbefore/mbed/features/mbedtls/platform/COMPONENT_PSA_SRV_IMPL/COMPONENT_NSPE
--iwithprefixbefore/mbed/features/mbedtls/platform/COMPONENT_PSA_SRV_IMPL
 -iwithprefixbefore/mbed/features/mbedtls/platform
--iwithprefixbefore/mbed/features/mbedtls/inc/psa
 -iwithprefixbefore/mbed/features/mbedtls/inc/mbedtls
 -iwithprefixbefore/mbed/features/mbedtls/inc
 -iwithprefixbefore/mbed/features/mbedtls
@@ -253,6 +243,7 @@
 -iwithprefixbefore/mbed/features/cellular/framework/targets/UBLOX/AT
 -iwithprefixbefore/mbed/features/cellular/framework/targets/UBLOX
 -iwithprefixbefore/mbed/features/cellular/framework/targets/TELIT/ME910
+-iwithprefixbefore/mbed/features/cellular/framework/targets/TELIT/ME310
 -iwithprefixbefore/mbed/features/cellular/framework/targets/TELIT/HE910
 -iwithprefixbefore/mbed/features/cellular/framework/targets/TELIT
 -iwithprefixbefore/mbed/features/cellular/framework/targets/RiotMicro/AT
@@ -280,8 +271,6 @@
 -iwithprefixbefore/mbed/features/cellular/framework/API
 -iwithprefixbefore/mbed/features/cellular/framework
 -iwithprefixbefore/mbed/features/cellular
--iwithprefixbefore/mbed/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NORDIC_CORDIO/TARGET_NRF5x/stack/include
--iwithprefixbefore/mbed/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NORDIC_CORDIO/TARGET_NRF5x/stack
 -iwithprefixbefore/mbed/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NORDIC_CORDIO/TARGET_NRF5x
 -iwithprefixbefore/mbed/features/FEATURE_BLE/targets/TARGET_CORDIO_LL/stack_adaptation
 -iwithprefixbefore/mbed/features/FEATURE_BLE/targets/TARGET_CORDIO_LL/stack/thirdparty/uecc
@@ -306,9 +295,6 @@
 -iwithprefixbefore/mbed/features/FEATURE_BLE/targets/TARGET_CORDIO_LL/stack
 -iwithprefixbefore/mbed/features/FEATURE_BLE/targets/TARGET_CORDIO_LL
 -iwithprefixbefore/mbed/features/FEATURE_BLE/targets/TARGET_CORDIO/stack_adaptation
--iwithprefixbefore/mbed/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf/sources/port/baremetal
--iwithprefixbefore/mbed/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf/sources/port
--iwithprefixbefore/mbed/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf/sources
 -iwithprefixbefore/mbed/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf/include/util
 -iwithprefixbefore/mbed/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf/include
 -iwithprefixbefore/mbed/features/FEATURE_BLE/targets/TARGET_CORDIO/stack/wsf

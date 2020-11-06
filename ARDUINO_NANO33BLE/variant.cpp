@@ -93,11 +93,10 @@ AnalogPinDescription g_AAnalogPinDescription[] = {
     {P0_4, NULL},   //A0
     {P0_5, NULL},   //A1
     {P0_29, NULL},  //A2 / G0
-    {P0_3, NULL},   //A3 / G1
-    {P0_2, NULL},   //A4 / CIPO
-    {P0_28, NULL},  //A5 / SCK
-    {P0_30, NULL},  //A6 / BATT_VIN/3
-    {P0_31, NULL}}; //A7 / COPI
+    {P0_28, NULL},  //A3 / SCK
+    {P0_30, NULL},  //A4 / BATT_VIN/3
+    {P0_31, NULL} //A5 / COPI
+};
 
 PinDescription g_APinDescription[] = {
     // // D0 - D7
