@@ -37,7 +37,6 @@ enum _AnalogAcquisitionTime
 
 // Pins
 // ----
-
 // Number of pins defined in PinDescription array
 #ifdef __cplusplus
 extern "C" unsigned int PINCOUNT_fn();
@@ -96,7 +95,7 @@ static const uint8_t BATTVIN3 = PIN_BATTVIN3;
 // Serial (EDBG)
 #define PIN_SERIAL_RX1 (42ul)
 #define PIN_SERIAL_TX1 (35ul)
-//For serial flow control, uncomment lines 225 and 226
+//For serial flow control, uncomment lines 189 and 190
 #define PIN_SERIAL_RTS1 (34ul)
 #define PIN_SERIAL_CTS1 (41ul)
 
@@ -104,35 +103,35 @@ static const uint8_t BATTVIN3 = PIN_BATTVIN3;
 #define PIN_SERIAL_TX2 (39ul)
 
 // SPI
-#define PIN_SPI_MISO (2u)
-#define PIN_SPI_MOSI (31u)
+#define PIN_SPI_CIPO (2u)
+#define PIN_SPI_COPI (31u)
 #define PIN_SPI_SCK (28u)
 #define PIN_SPI_SS (20u)
 
 static const uint8_t SS = PIN_SPI_SS;
-static const uint8_t MOSI = PIN_SPI_MOSI;
-static const uint8_t MISO = PIN_SPI_MISO;
+static const uint8_t MOSI = PIN_SPI_COPI;
+static const uint8_t MISO = PIN_SPI_CIPO;
 static const uint8_t SCK = PIN_SPI_SCK;
 
 // //NOTE: this is for onboard flash IC
-// #define PIN_SPI_MISO (21u)
-// #define PIN_SPI_MOSI (14u)
+// #define PIN_SPI_CIPO (21u)
+// #define PIN_SPI_COPI (14u)
 // #define PIN_SPI_SCK (19u)
 // #define PIN_SPI_SS (12u)
 
 // static const uint8_t SS = PIN_SPI_SS;
-// static const uint8_t MOSI = PIN_SPI_MOSI;
-// static const uint8_t MISO = PIN_SPI_MISO;
+// static const uint8_t MOSI = PIN_SPI_COPI;
+// static const uint8_t MISO = PIN_SPI_CIPO;
 // static const uint8_t SCK = PIN_SPI_SCK;
 
-#define PIN_SPI_MISO1 (21u)
-#define PIN_SPI_MOSI1 (14u)
+#define PIN_SPI_CIPO1 (21u)
+#define PIN_SPI_COPI1 (14u)
 #define PIN_SPI_SCK1 (19u)
 #define PIN_SPI_SS1 (32u)
 
 static const uint8_t SS1 = PIN_SPI_SS1;
-static const uint8_t MOSI1 = PIN_SPI_MOSI1;
-static const uint8_t MISO1 = PIN_SPI_MISO1;
+static const uint8_t MOSI1 = PIN_SPI_COPI1;
+static const uint8_t MISO1 = PIN_SPI_CIPO1;
 static const uint8_t SCK1 = PIN_SPI_SCK1;
 
 #define PIN_QSPI_SCK 19
@@ -143,16 +142,6 @@ static const uint8_t SCK1 = PIN_SPI_SCK1;
 #define PIN_QSPI_IO3 32
 
 // Wire
-// #define PIN_WIRE_SDA        (18u)
-// #define PIN_WIRE_SCL        (19u)
-
-// #define PIN_WIRE_SDA1       (30u)
-// #define PIN_WIRE_SCL1       (31u)
-
-// #define PIN_ENABLE_SENSORS_3V3     (32u)
-// #define PIN_ENABLE_I2C_PULLUP      (33u)
-
-// #define PIN_INT_APDS (26u)
 #define PIN_WIRE_SDA (8u)
 #define PIN_WIRE_SCL (11u)
 #define PIN_WIRE_INT (15u)
@@ -160,18 +149,15 @@ static const uint8_t SCK1 = PIN_SPI_SCK1;
 #define PIN_WIRE_SDA1 (33u)
 #define PIN_WIRE_SCL1 (24u)
 
+//TODO: should i define I2C interrupt pin here too?
 // #define PIN_ENABLE_SENSORS_3V3 (32u) //TODO?
 // #define PIN_ENABLE_I2C_PULLUP (33u)  //TODO
 
-// #define PIN_INT_APDS (35u) //TODO
+// #define PIN_INT_APDS (26u) //TODO
 
 // PDM Interfaces
 // ---------------
-// #define PIN_PDM_PWR (27)
-// #define PIN_PDM_CLK (28)
-// #define PIN_PDM_DIN (29)
-
-#define PIN_PDM_PWR (34) //TODO -- don't know what pin to put here...
+#define PIN_PDM_PWR (27) //TODO -- don't know what pin to put here. Do i need this?
 #define PIN_PDM_CLK (25)
 #define PIN_PDM_DIN (26)
 
@@ -222,12 +208,12 @@ static const uint8_t SCK1 = PIN_SPI_SCK1;
 
 #define SPI_HOWMANY 2
 
-#define SPI_MISO (digitalPinToPinName(PIN_SPI_MISO))
-#define SPI_MOSI (digitalPinToPinName(PIN_SPI_MOSI))
+#define SPI_MISO (digitalPinToPinName(PIN_SPI_CIPO))
+#define SPI_MOSI (digitalPinToPinName(PIN_SPI_COPI))
 #define SPI_SCK (digitalPinToPinName(PIN_SPI_SCK))
 
-#define SPI_MISO1 (digitalPinToPinName(PIN_SPI_MISO1))
-#define SPI_MOSI1 (digitalPinToPinName(PIN_SPI_MOSI1))
+#define SPI_MISO1 (digitalPinToPinName(PIN_SPI_CIPO1))
+#define SPI_MOSI1 (digitalPinToPinName(PIN_SPI_COPI1))
 #define SPI_SCK1 (digitalPinToPinName(PIN_SPI_SCK1))
 
 #define digitalPinToPort(P) (digitalPinToPinName(P) / 32)

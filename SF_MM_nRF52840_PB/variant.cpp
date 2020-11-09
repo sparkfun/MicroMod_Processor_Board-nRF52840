@@ -80,16 +80,6 @@ void analogAcquisitionTime(uint8_t time)
 }
 
 AnalogPinDescription g_AAnalogPinDescription[] = {
-    //   // A0 - A7
-    // { P0_4,  NULL },    // A0
-    // { P0_5,  NULL },    // A1
-    // { P0_30, NULL },    // A2
-    // { P0_29, NULL },    // A3
-    // { P0_31, NULL },    // A4/SDA
-    // { P0_2,  NULL },    // A5/SCL
-    // { P0_28, NULL },    // A6
-    // { P0_3,  NULL }     // A7
-
     {P0_4, NULL},   //A0
     {P0_5, NULL},   //A1
     {P0_29, NULL},  //A2 / G0
@@ -99,103 +89,54 @@ AnalogPinDescription g_AAnalogPinDescription[] = {
 };
 
 PinDescription g_APinDescription[] = {
-    // // D0 - D7
-    // { P1_3,  NULL, NULL, NULL },     // D0/TX
-    // { P1_10, NULL, NULL, NULL },     // D1/RX
-    // { P1_11, NULL, NULL, NULL },     // D2
-    // { P1_12, NULL, NULL, NULL },     // D3
-    // { P1_15, NULL, NULL, NULL },     // D4
-    // { P1_13, NULL, NULL, NULL },     // D5
-    // { P1_14, NULL, NULL, NULL },     // D6
-    // { P0_23, NULL, NULL, NULL },     // D7
-
-    // // D8 - D13
-    // { P0_21, NULL, NULL, NULL },     // D8
-    // { P0_27, NULL, NULL, NULL },     // D9
-    // { P1_2,  NULL, NULL, NULL },     // D10
-    // { P1_1,  NULL, NULL, NULL },     // D11/MOSI
-    // { P1_8,  NULL, NULL, NULL },     // D12/MISO
-    // { P0_7, NULL, NULL, NULL },     // D13/SCK/LED
-
-    // // A0 - A7
-    // { P0_4,  NULL, NULL, NULL },     // A0
-    // { P0_5,  NULL, NULL, NULL },     // A1
-    // { P0_30, NULL, NULL, NULL },     // A2
-    // { P0_29, NULL, NULL, NULL },     // A3
-    // { P0_31, NULL, NULL, NULL },     // A4/SDA
-    // { P0_2,  NULL, NULL, NULL },     // A5/SCL
-    // { P0_28, NULL, NULL, NULL },     // A6
-    // { P0_3,  NULL, NULL, NULL },     // A7
-
-    // // LEDs
-    // { P0_24, NULL, NULL, NULL },     // LED R
-    // { P0_16, NULL, NULL, NULL },     // LED G
-    // { P0_6,  NULL, NULL, NULL },     // LED B
-    // { P1_9,  NULL, NULL, NULL },     // LED PWR
-
-    // { P0_19, NULL, NULL, NULL },     // INT APDS
-
-    // // PDM
-    // { P0_17, NULL, NULL, NULL },     // PDM PWR
-    // { P0_26, NULL, NULL, NULL },     // PDM CLK
-    // { P0_25, NULL, NULL, NULL },     // PDM DIN
-
-    // // Internal I2C
-    // { P0_14, NULL, NULL, NULL },     // SDA2
-    // { P0_15, NULL, NULL, NULL },     // SCL2
-
-    // // Internal I2C
-    // { P1_0,  NULL, NULL, NULL },     // I2C_PULL
-    // { P0_22, NULL, NULL, NULL }     // VDD_ENV_ENABLE
-
     {P0_0, NULL, NULL, NULL},  //XL1
     {P0_1, NULL, NULL, NULL},  //XL2
-    {P0_2, NULL, NULL, NULL},  //MISO1
-    {P0_3, NULL, NULL, NULL},  //ADC_D- -- for the time being...
+    {P0_2, NULL, NULL, NULL},  //CIPO
+    {P0_3, NULL, NULL, NULL},  //GPIO1
     {P0_4, NULL, NULL, NULL},  //ADC0
     {P0_5, NULL, NULL, NULL},  //ADC1
     {P0_6, NULL, NULL, NULL},  //PWM0
-    {P0_7, NULL, NULL, NULL},  //LED_BUILTIN
+    {P0_7, NULL, NULL, NULL},  //!BOOT!
     {P0_8, NULL, NULL, NULL},  //SDA
-    {P0_9, NULL, NULL, NULL},  //NFC1
-    {P0_10, NULL, NULL, NULL}, //NFC2
+    {P0_9, NULL, NULL, NULL},  //GPIO9 / NFC1
+    {P0_10, NULL, NULL, NULL}, //GPIO10 / NFC2
     {P0_11, NULL, NULL, NULL}, //SCL
     {P0_12, NULL, NULL, NULL}, //FLASH_!CS!
-    {P0_13, NULL, NULL, NULL}, //!BOOT!
-    {P0_14, NULL, NULL, NULL}, //MOSI
-    {P0_15, NULL, NULL, NULL}, //TX1
+    {P0_13, NULL, NULL, NULL}, //LED_BUILTIN
+    {P0_14, NULL, NULL, NULL}, //COPI1 / SDIO_CMD
+    {P0_15, NULL, NULL, NULL}, //I2C_!INT!
     {P0_16, NULL, NULL, NULL}, //PWM1
-    {P0_17, NULL, NULL, NULL}, //RX1
+    {P0_17, NULL, NULL, NULL}, //GPIO5
     {P0_18, NULL, NULL, NULL}, //!RESET!
-    {P0_19, NULL, NULL, NULL}, //SCK
-    {P0_20, NULL, NULL, NULL}, //!CS!1
-    {P0_21, NULL, NULL, NULL}, //MISO
-    {P0_22, NULL, NULL, NULL}, //SDIO_DATA1 -- this will change too
-    {P0_23, NULL, NULL, NULL}, //SDIO_DATA2 -- this will change
+    {P0_19, NULL, NULL, NULL}, //SCK1 / SDIO_CLK
+    {P0_20, NULL, NULL, NULL}, //!CS!
+    {P0_21, NULL, NULL, NULL}, //CIPO1 / SDIO_DATA0
+    {P0_22, NULL, NULL, NULL}, //SDIO_DATA1
+    {P0_23, NULL, NULL, NULL}, //SDIO_DATA2
     {P0_24, NULL, NULL, NULL}, //SCL1
     {P0_25, NULL, NULL, NULL}, //PDM_CLK
     {P0_26, NULL, NULL, NULL}, //PDM_DATA
     {P0_27, NULL, NULL, NULL}, //D0
-    {P0_28, NULL, NULL, NULL}, //SCK1
-    {P0_29, NULL, NULL, NULL}, //ADC_D+ -- this isn't supported by nRF. Will change
+    {P0_28, NULL, NULL, NULL}, //SCK
+    {P0_29, NULL, NULL, NULL}, //GPIO0
     {P0_30, NULL, NULL, NULL}, //BATT_VIN/3
-    {P0_31, NULL, NULL, NULL}, //MOSI1
-    {P1_0, NULL, NULL, NULL},  //!CS!
+    {P0_31, NULL, NULL, NULL}, //COPI
+    {P1_0, NULL, NULL, NULL},  //!CS1! / SDIO_DATA3
     {P1_1, NULL, NULL, NULL},  //SDA1
     {P1_2, NULL, NULL, NULL},  //RTS1
-    {P1_3, NULL, NULL, NULL},  //I2C_!INT!
-    {P1_4, NULL, NULL, NULL},  //G7
+    {P1_3, NULL, NULL, NULL},  //TX1
+    {P1_4, NULL, NULL, NULL},  //GPIO7
     {P1_5, NULL, NULL, NULL},  //RX2
-    {P1_6, NULL, NULL, NULL},  //G6
+    {P1_6, NULL, NULL, NULL},  //GPIO6
     {P1_7, NULL, NULL, NULL},  //TX2
     {P1_8, NULL, NULL, NULL},  //D1
     {P1_9, NULL, NULL, NULL},  //CTS1
-    {P1_10, NULL, NULL, NULL}, //G5
-    {P1_11, NULL, NULL, NULL}, //G4
-    {P1_12, NULL, NULL, NULL}, //G3
-    {P1_13, NULL, NULL, NULL}, //G2
-    {P1_14, NULL, NULL, NULL}, //G1
-    {P1_15, NULL, NULL, NULL}  //G0
+    {P1_10, NULL, NULL, NULL}, //RX1
+    {P1_11, NULL, NULL, NULL}, //GPIO4
+    {P1_12, NULL, NULL, NULL}, //GPIO3
+    {P1_13, NULL, NULL, NULL}, //GPIO2
+    {P1_14, NULL, NULL, NULL}, //GPIO8
+    {P1_15, NULL, NULL, NULL}  //3.3V_EN
 };
 
 extern "C"
