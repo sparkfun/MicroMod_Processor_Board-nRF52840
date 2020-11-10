@@ -43,7 +43,7 @@ extern "C" unsigned int PINCOUNT_fn();
 #endif
 #define PINS_COUNT (PINCOUNT_fn())
 #define NUM_DIGITAL_PINS (48u)
-#define NUM_ANALOG_INPUTS (8u)
+#define NUM_ANALOG_INPUTS (6u)
 #define NUM_ANALOG_OUTPUTS (0u)
 
 // LEDs
@@ -108,21 +108,16 @@ static const uint8_t BATTVIN3 = PIN_BATTVIN3;
 #define PIN_SPI_SCK (28u)
 #define PIN_SPI_SS (20u)
 
-static const uint8_t SS = PIN_SPI_SS;
-static const uint8_t MOSI = PIN_SPI_COPI;
-static const uint8_t MISO = PIN_SPI_CIPO;
-static const uint8_t SCK = PIN_SPI_SCK;
-
 // //NOTE: this is for onboard flash IC
 // #define PIN_SPI_CIPO (21u)
 // #define PIN_SPI_COPI (14u)
 // #define PIN_SPI_SCK (19u)
 // #define PIN_SPI_SS (12u)
 
-// static const uint8_t SS = PIN_SPI_SS;
-// static const uint8_t MOSI = PIN_SPI_COPI;
-// static const uint8_t MISO = PIN_SPI_CIPO;
-// static const uint8_t SCK = PIN_SPI_SCK;
+static const uint8_t SS = PIN_SPI_SS;
+static const uint8_t MOSI = PIN_SPI_COPI;
+static const uint8_t MISO = PIN_SPI_CIPO;
+static const uint8_t SCK = PIN_SPI_SCK;
 
 #define PIN_SPI_CIPO1 (21u)
 #define PIN_SPI_COPI1 (14u)
@@ -149,15 +144,9 @@ static const uint8_t SCK1 = PIN_SPI_SCK1;
 #define PIN_WIRE_SDA1 (33u)
 #define PIN_WIRE_SCL1 (24u)
 
-//TODO: should i define I2C interrupt pin here too?
-// #define PIN_ENABLE_SENSORS_3V3 (32u) //TODO?
-// #define PIN_ENABLE_I2C_PULLUP (33u)  //TODO
-
-// #define PIN_INT_APDS (26u) //TODO
-
 // PDM Interfaces
 // ---------------
-#define PIN_PDM_PWR (27) //TODO -- don't know what pin to put here. Do i need this?
+#define PIN_PDM_PWR (46)
 #define PIN_PDM_CLK (25)
 #define PIN_PDM_DIN (26)
 
