@@ -1,7 +1,7 @@
 SparkFun MicroMod Processor - nRF52840
 ========================================
 
-![SparkFun MicroMod Processor - nRF52840](https://cdn.sparkfun.com/assets/parts/1/5/9/2/1/16984-SparkFun_MicroMod_nRF52840_Processor-04.jpg)
+[![SparkFun MicroMod Processor - nRF52840](https://cdn.sparkfun.com/assets/parts/1/5/9/2/1/16984-SparkFun_MicroMod_nRF52840_Processor-04.jpg)](https://www.sparkfun.com/products/16984)
 
 [*SparkFun MicroMod Processor - nRF52840 (DEV-16984)*](https://www.sparkfun.com/products/16984)
 
