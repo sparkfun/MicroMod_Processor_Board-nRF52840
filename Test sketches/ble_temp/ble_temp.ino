@@ -29,6 +29,7 @@ int oldTemperatureF = 0; //last temperature reading from BME280
 
 void setup() {
   Serial.begin(115200);    // initialize serial communication
+  Wire.begin();
   while (!Serial);
 
   pinMode(LED_BUILTIN, OUTPUT); // initialize the built-in LED pin to indicate when a central is connected
