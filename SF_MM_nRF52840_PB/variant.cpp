@@ -1,12 +1,13 @@
 #include "Arduino.h"
+#include "pinDefinitions.h"
 
 /* wiring_analog variables definition */
 /* Flag to indicate whether the ADC config has been changed from the default one */
 bool isAdcConfigChanged = false;
 
-/* 
+/*
  * Configuration used for all the active ADC channels, it is initialized with the mbed default values
- * When it is changed, all the ADC channels are reconfigured accordingly 
+ * When it is changed, all the ADC channels are reconfigured accordingly
  */
 analogin_config_t adcCurrentConfig = {
     .resistor_p = NRF_SAADC_RESISTOR_DISABLED,

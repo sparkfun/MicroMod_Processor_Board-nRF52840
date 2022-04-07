@@ -7,7 +7,7 @@
 
 #define ANALOG_CONFIG
 
-/* Analog reference options 
+/* Analog reference options
  * Different possibilities available combining Reference and Gain
  */
 enum _AnalogReferenceMode
@@ -45,6 +45,8 @@ extern "C" unsigned int PINCOUNT_fn();
 #define NUM_DIGITAL_PINS (48u)
 #define NUM_ANALOG_INPUTS (6u)
 #define NUM_ANALOG_OUTPUTS (0u)
+
+extern PinName digitalPinToPinName(pin_size_t P);       // add paulvha
 
 // LEDs
 // ----
